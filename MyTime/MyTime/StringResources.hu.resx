@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema 
+		
+		Version 2.0
+		
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+		
+		Example:
+		
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">2.0</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+				<value>[base64 mime encoded serialized .NET Framework object]</value>
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+				<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+				<comment>This is a comment</comment>
+		</data>
+								
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+		
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+		
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+		
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+		
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+						: and then encoded with base64 encoding.
+		
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+						: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+						: using a System.ComponentModel.TypeConverter
+						: and then encoded with base64 encoding.
+		-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AddCallPage_Books" xml:space="preserve">
+		<value>Könyvek</value>
+	</data>
+	<data name="AddCallPage_Brochures" xml:space="preserve">
+		<value>Füzetek</value>
+	</data>
+	<data name="AddCallPage_CallSaved" xml:space="preserve">
+		<value>Látogatás rögzítve.</value>
+	</data>
+	<data name="AddCallPage_CallSavedFailed" xml:space="preserve">
+		<value>Látogatás Rögzítése Sikertelen.</value>
+	</data>
+	<data name="AddCallPage_Date" xml:space="preserve">
+		<value>DÁTUM</value>
+	</data>
+	<data name="AddCallPage_DeleteCall" xml:space="preserve">
+		<value>Látogatás törölve</value>
+	</data>
+	<data name="AddCallPage_DeleteCallConfirmation" xml:space="preserve">
+		<value>Biztosan törölnéd ezt a látogatást?</value>
+	</data>
+	<data name="AddCallPage_DeleteCallFailed" xml:space="preserve">
+		<value>A látogatás törlése sikertelen.</value>
+	</data>
+	<data name="AddCallPage_Headline" xml:space="preserve">
+		<value>látogatás</value>
+	</data>
+	<data name="AddCallPage_Magazines" xml:space="preserve">
+		<value>Folyóiratok</value>
+	</data>
+	<data name="AddCallPage_Notes" xml:space="preserve">
+		<value>Megjegyzések</value>
+	</data>
+	<data name="AddCallPage_Placements" xml:space="preserve">
+		<value>TERJESZTÉSEK</value>
+	</data>
+	<data name="AddCallPage_Save" xml:space="preserve">
+		<value>save</value>
+	</data>
+	<data name="AddCallPage_SaveBeforeEditMessage" xml:space="preserve">
+		<value>Mentened kell az UL-t, mielőtt rögzítenél egy látogatást.</value>
+	</data>
+	<data name="AddRBCTimePage_AskForDoubleEntry" xml:space="preserve">
+		<value>Úgy tűnik, ma már voltál a szolgálatban! Szeretnéd, hogy összevonjam a mostani idődet a korábban rögzítettel?</value>
+	</data>
+	<data name="AddRBCTimePage_Confirmation" xml:space="preserve">
+		<value>Önkéntes munka Óra Rögzítve.</value>
+	</data>
+	<data name="AddRBCTimePage_ConvertMenuItem" xml:space="preserve">
+		<value>Átalakítás időnek</value>
+	</data>
+	<data name="AddRBCTimePage_Date" xml:space="preserve">
+		<value>DÁTUM</value>
+	</data>
+	<data name="AddRBCTimePage_Delete" xml:space="preserve">
+		<value>töröl</value>
+	</data>
+	<data name="AddRBCTimePage_DeleteConfirmation" xml:space="preserve">
+		<value>Önkéntes munka Törölve.</value>
+	</data>
+	<data name="AddRBCTimePage_DeleteFailed" xml:space="preserve">
+		<value>Törlés sikertelen.</value>
+	</data>
+	<data name="AddRBCTimePage_Headline" xml:space="preserve">
+		<value>önkéntes munka</value>
+	</data>
+	<data name="AddRBCTimePage_Note" xml:space="preserve">
+		<value>Önkéntes munka bármilyen alkalom, ami nem a szántóföldi szolgálattal kapcsolatos, azonban vezethető a munkajelentéseden - például néhány testvér vagy testvérnő a helyi építési bizottság által ki lett nevezve Királyság-termek építésére, vagy munkálatokban való részvételre. Kérlek, keresd meg a gyülekezeti szolgálat felvigyázót a részletekért.</value>
+	</data>
+	<data name="AddRBCTimePage_Notes" xml:space="preserve">
+		<value>MEGJEGYZÉS</value>
+	</data>
+	<data name="AddRBCTimePage_Save" xml:space="preserve">
+		<value>mentés</value>
+	</data>
+	<data name="AddRBCTimePage_SaveConfirmation" xml:space="preserve">
+		<value>Idő: {0} Óra Rögzítve.</value>
+	</data>
+	<data name="AddRBCTimePage_SaveFailed" xml:space="preserve">
+		<value>Rögzítés Sikertelen.</value>
+	</data>
+	<data name="AddRBCTimePage_Time" xml:space="preserve">
+		<value>IDŐ</value>
+	</data>
+	<data name="AddTimePage_Books" xml:space="preserve">
+		<value>KÖNYVEK</value>
+	</data>
+	<data name="AddTimePage_Brochures" xml:space="preserve">
+		<value>Füzetek</value>
+	</data>
+	<data name="AddTimePage_ConvertMenuItem" xml:space="preserve">
+		<value>elszámolás önkéntes munkaként</value>
+	</data>
+	<data name="AddTimePage_Date" xml:space="preserve">
+		<value>DÁTUM</value>
+	</data>
+	<data name="AddTimePage_DeleteMenuItem" xml:space="preserve">
+		<value>törlés</value>
+	</data>
+	<data name="AddTimePage_Headline" xml:space="preserve">
+		<value>idő</value>
+	</data>
+	<data name="AddTimePage_Magazines" xml:space="preserve">
+		<value>Folyóiratok</value>
+	</data>
+	<data name="AddTimePage_Messages_RBCConvertFailed" xml:space="preserve">
+		<value>Összevonás Sikertelen.</value>
+	</data>
+	<data name="AddTimePage_Messages_RBCConvertSuccess" xml:space="preserve">
+		<value>Idő átvezetve Önkéntes munkaként.</value>
+	</data>
+	<data name="AddTimePage_Messages_SaveCompleted" xml:space="preserve">
+		<value>Idő: {0} Óra Rögzítve.</value>
+	</data>
+	<data name="AddTimePage_Messages_SaveFailed" xml:space="preserve">
+		<value>Nem sikerült rögzíteni az időt.</value>
+	</data>
+	<data name="AddTimePage_Messages_TimeDeleteFailed" xml:space="preserve">
+		<value>Törlés Sikertelen.</value>
+	</data>
+	<data name="AddTimePage_Messages_TimeDeleteSuccess" xml:space="preserve">
+		<value>Idő Törölve.</value>
+	</data>
+	<data name="AddTimePage_Notes" xml:space="preserve">
+		<value>MEGJEGYZÉS</value>
+	</data>
+	<data name="AddTimePage_Placements" xml:space="preserve">
+		<value>TERJESZTÉSEK</value>
+	</data>
+	<data name="AddTimePage_RVs" xml:space="preserve">
+		<value>Újralátogatások</value>
+	</data>
+	<data name="AddTimePage_Save" xml:space="preserve">
+		<value>mentés</value>
+	</data>
+	<data name="AddTimePage_Time" xml:space="preserve">
+		<value>IDŐ</value>
+	</data>
+	<data name="AddTime_BibleStudies" xml:space="preserve">
+		<value>Biblia tanulmányozások</value>
+	</data>
+	<data name="ApplicationName" xml:space="preserve">
+		<value>SZÁNTÓFÖLDI SZOLGÁLAT</value>
+	</data>
+	<data name="Application_DailyTextURL" xml:space="preserve">
+		<value>http://wol.jw.org/hu/wol/dt/r17/lp-h/{0}/{1}/{2}</value>
+	</data>
+	<data name="BackupAndRestorePage_Backup" xml:space="preserve">
+		<value>Mentés</value>
+	</data>
+	<data name="BackupAndRestorePage_Headline" xml:space="preserve">
+		<value>Felhő kezelése</value>
+	</data>
+	<data name="BackupAndRestorePage_LastBackup" xml:space="preserve">
+		<value>Utolsó Mentés Dátuma</value>
+	</data>
+	<data name="BackupAndRestorePage_Message" xml:space="preserve">
+		<value>Kérlek, jelentkezz be, és engedélyezd a hozzáférést SkyDrive fiókodhoz.</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_DwnlProgress" xml:space="preserve">
+		<value>{0:0,0} of {1:0,0} letöltve.</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_NeverBackedUp" xml:space="preserve">
+		<value>Még nem készítettél másolatot!</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_Progress" xml:space="preserve">
+		<value>{0:0,0} of {1:0,0} feltöltve.</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_RestoreFailed" xml:space="preserve">
+		<value>A Helyreállítás Sikertelen!</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_RestoreSuccess" xml:space="preserve">
+		<value>Helyreállítás elkészült!</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_Restoring" xml:space="preserve">
+		<value>Helyreállítás folyamatban...</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_SkyDriveListingFailed" xml:space="preserve">
+		<value>A Skydrive Listázása Sikertelen.</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_UploadFailed" xml:space="preserve">
+		<value>Nem lehet feltölteni az elmentett adatokat. Kérlek, jelentkezz ki, és próbáld meg újra.</value>
+	</data>
+	<data name="BackupAndRestorePage_Messages_Welcome" xml:space="preserve">
+		<value>Üdvözöllek {0} {1}</value>
+	</data>
+	<data name="BackupAndRestorePage_NotSignedIn" xml:space="preserve">
+		<value>Nincs bejelentkezve.</value>
+	</data>
+	<data name="BackupAndRestorePage_Restore" xml:space="preserve">
+		<value>Helyreállítás</value>
+	</data>
+	<data name="BackupAndRestorePage_SignIn" xml:space="preserve">
+		<value>Bejelentkezés</value>
+	</data>
+	<data name="BackupAndRestorePage_Signout" xml:space="preserve">
+		<value>Kijelentkezés</value>
+	</data>
+	<data name="BackupAndRestorePage_Welcome" xml:space="preserve">
+		<value>Üdvözöllek</value>
+	</data>
+	<data name="CustomReportsPage_ErrorText" xml:space="preserve">
+		<value>Válaszd ki a kezdő és a befejező dátumot.</value>
+	</data>
+	<data name="CustomReportsPage_Headline" xml:space="preserve">
+		<value>Egyéni Jelentés</value>
+	</data>
+	<data name="CustomReportsPage_Month" xml:space="preserve">
+		<value>Hónap</value>
+	</data>
+	<data name="CustomReportsPage_Range" xml:space="preserve">
+		<value>INTERVALLUM</value>
+	</data>
+	<data name="CustomReportsPage_RunReport" xml:space="preserve">
+		<value>Jelentés futtatása</value>
+	</data>
+	<data name="CustomReportsPage_Start" xml:space="preserve">
+		<value>KEZDŐ DÁTUM</value>
+	</data>
+	<data name="CustomReportsPage_To" xml:space="preserve">
+		<value>BEFEJEZŐ DÁTUM</value>
+	</data>
+	<data name="CustomReportsPage_Week" xml:space="preserve">
+		<value>Hét</value>
+	</data>
+	<data name="CustomReportsPage_Year" xml:space="preserve">
+		<value>ÉV</value>
+	</data>
+	<data name="CustomReportsPage_LastMonth" xml:space="preserve">
+		<value>Utolsó hónap</value>
+	</data>
+	<data name="CustomReportsPage_LastServiceYear" xml:space="preserve">
+		<value>Utolsó szolgálati év</value>
+	</data>
+	<data name="FullRVListPage_Headline" xml:space="preserve">
+		<value>Újralátogatások</value>
+	</data>
+	<data name="FullRVListPage_YearOld" xml:space="preserve">
+		<value>Éves</value>
+	</data>
+	<data name="MainPage_AppName" xml:space="preserve">
+		<value>Szántóföldi Szolgálat</value>
+	</data>
+	<data name="MainPage_DT_Copyright" xml:space="preserve">
+		<value>A fenti SZERZŐI JOG 2014 WATCHTOWER BIBLE AND TRACT SOCIETY OF PENNSYLVANIA, INC. Minden jog fenntartva.</value>
+	</data>
+	<data name="MainPage_DT_ErrorText" xml:space="preserve">
+		<value>A megtekintéshez csatlakoznod kell az internethez.</value>
+	</data>
+	<data name="MainPage_Presentations_Headline" xml:space="preserve">
+		<value>felkínálások</value>
+	</data>
+	<data name="MainPage_MainMenu_AddAuxTime" xml:space="preserve">
+		<value>önkéntes munka hozzáadása</value>
+	</data>
+	<data name="MainPage_MainMenu_AddRv" xml:space="preserve">
+		<value>újralátogatás hozzáadása</value>
+	</data>
+	<data name="MainPage_MainMenu_AddTime" xml:space="preserve">
+		<value>idő hozzáadása</value>
+	</data>
+	<data name="MainPage_MainMenu_BackupRestore" xml:space="preserve">
+		<value>mentés és helyreállítás</value>
+	</data>
+	<data name="MainPage_MainMenu_CustomReport" xml:space="preserve">
+		<value>egyéni szántóföldi jelentés</value>
+	</data>
+	<data name="MainPage_MainMenu_MonthReport" xml:space="preserve">
+		<value>{0} jelentés</value>
+	</data>
+	<data name="MainPage_MainMenu_SendReport" xml:space="preserve">
+		<value>szántóföldi jelentés küldése</value>
+	</data>
+	<data name="MainPage_MainMenu_ServiceYearReport" xml:space="preserve">
+		<value>éves szolgálati jelentés</value>
+	</data>
+	<data name="MainPage_MainMenu_Settings" xml:space="preserve">
+		<value>beállítások</value>
+	</data>
+	<data name="MainPage_MainMenu_WtLib" xml:space="preserve">
+		<value>Őrtorony könyvtár</value>
+	</data>
+	<data name="MainPage_Messages_AddedTime" xml:space="preserve">
+		<value>Idő ({0} óra és; {1} perc) hozzáadva.</value>
+	</data>
+	<data name="MainPage_Messages_CantAddZeroMin" xml:space="preserve">
+		<value>Nem adhatsz hozzá nulla percet.</value>
+	</data>
+	<data name="MainPage_Messages_DonateLater" xml:space="preserve">
+		<value>Későbbiekben a beállításokban lehetőség lesz adományra is.</value>
+	</data>
+	<data name="MainPage_Messages_DonatePlease" xml:space="preserve">
+		<value>Ez az applikáció ingyenesen használható. Szeretnéd támogatni ennek az alkalmazásnak a fejlesztését?</value>
+	</data>
+	<data name="MainPage_Report_AuxHours" xml:space="preserve">
+		<value>Egyéb Óra: 	{0:0.0}
+</value>
+	</data>
+	<data name="MainPage_Report_BibleStudies" xml:space="preserve">
+		<value>Biblia tanulmányozások:	{0}</value>
+	</data>
+	<data name="MainPage_Report_Books" xml:space="preserve">
+		<value>Könyvek:		{0}
+</value>
+	</data>
+	<data name="MainPage_Report_Brochures" xml:space="preserve">
+		<value>Füzetek:	{0}
+</value>
+	</data>
+	<data name="MainPage_Report_Header" xml:space="preserve">
+		<value>Itt a szántóföldi szolgálati jelentésem {0:yyyy},{0:MMMM}:
+
+</value>
+	</data>
+	<data name="MainPage_Report_Hours" xml:space="preserve">
+		<value>Óra:		{0:0.00}
+</value>
+	</data>
+	<data name="MainPage_Report_Mags" xml:space="preserve">
+		<value>Folyóiratok:	{0}
+</value>
+	</data>
+	<data name="MainPage_Report_RVs" xml:space="preserve">
+		<value>Újralátogatások:	{0}
+</value>
+	</data>
+	<data name="MainPage_RvHeadline" xml:space="preserve">
+		<value>Újralátogatások</value>
+	</data>
+	<data name="MainPage_RV_DaysSince" xml:space="preserve">
+		<value>{0} Napja volt az utolsó látogatásod</value>
+	</data>
+	<data name="MainPage_Time_BibleStudies" xml:space="preserve">
+		<value>Biblia tanulmányozások</value>
+	</data>
+	<data name="MainPage_Time_Books" xml:space="preserve">
+		<value>Könyvek</value>
+	</data>
+	<data name="MainPage_Time_Brochures" xml:space="preserve">
+		<value>Füzetek</value>
+	</data>
+	<data name="MainPage_Time_Headline" xml:space="preserve">
+		<value>idő</value>
+	</data>
+	<data name="MainPage_Time_Magazines" xml:space="preserve">
+		<value>Folyóiratok</value>
+	</data>
+	<data name="MainPage_Time_Notes" xml:space="preserve">
+		<value>MEGJEGYZÉS</value>
+	</data>
+	<data name="MainPage_Time_ReturnVisits" xml:space="preserve">
+		<value>Újralátogatások</value>
+	</data>
+	<data name="ReportingPage_BibleStudies_1" xml:space="preserve">
+		<value> Biblia tanulmányozások</value>
+	</data>
+	<data name="ReportingPage_Entries" xml:space="preserve">
+		<value>bejegyzés</value>
+	</data>
+	<data name="ReportingPage_Entries_Header" xml:space="preserve">
+		<value>bejegyzés</value>
+	</data>
+	<data name="ReportingPage_Report_Books" xml:space="preserve">
+		<value> Könyvek, </value>
+	</data>
+	<data name="ReportingPage_Report_Brochures" xml:space="preserve">
+		<value> Füzetek, </value>
+	</data>
+	<data name="ReportingPage_Report_ChartTitle" xml:space="preserve">
+		<value>Idő Órában</value>
+	</data>
+	<data name="ReportingPage_Report_Days" xml:space="preserve">
+		<value> nap</value>
+	</data>
+	<data name="ReportingPage_Report_Disclaimer" xml:space="preserve">
+		<value>Emlékeztető: A Szolgálati év Szeptemberrel kezdődik.</value>
+	</data>
+	<data name="ReportingPage_Report_From" xml:space="preserve">
+		<value>TÓL: </value>
+	</data>
+	<data name="ReportingPage_Report_Headline" xml:space="preserve">
+		<value>jelentés</value>
+	</data>
+	<data name="ReportingPage_Report_HoursOnDays" xml:space="preserve">
+		<value>{0} Óra {1} Nap alatt</value>
+	</data>
+	<data name="ReportingPage_Report_Legend" xml:space="preserve">
+		<value>jelmagyarázat</value>
+	</data>
+	<data name="ReportingPage_Report_Magazines" xml:space="preserve">
+		<value> Füzetek, </value>
+	</data>
+	<data name="ReportingPage_Report_MyActivity" xml:space="preserve">
+		<value>tevékenységem</value>
+	</data>
+	<data name="ReportingPage_Report_On" xml:space="preserve">
+		<value> on </value>
+	</data>
+	<data name="ReportingPage_Report_OtherActivity" xml:space="preserve">
+		<value>EGYÉB TEVÉKENYSÉG</value>
+	</data>
+	<data name="ReportingPage_Report_Placements" xml:space="preserve">
+		<value>TERJESZTÉSEK</value>
+	</data>
+	<data name="ReportingPage_Report_Time" xml:space="preserve">
+		<value>IDŐ</value>
+	</data>
+	<data name="ReportingPage_Report_TimeInHrs" xml:space="preserve">
+		<value>IDŐ ÓRÁBAN</value>
+	</data>
+	<data name="ReportingPage_Report_To" xml:space="preserve">
+		<value>IG: </value>
+	</data>
+	<data name="ReportingPage_Report_TotalHours" xml:space="preserve">
+		<value>ÖSSZESEN: </value>
+	</data>
+	<data name="ReportingPage_ReturnVisits_1" xml:space="preserve">
+		<value> Újralátogatások</value>
+	</data>
+	<data name="ReportingPage_Share" xml:space="preserve">
+		<value>megosztás...</value>
+	</data>
+	<data name="RVPage_Address_Address1" xml:space="preserve">
+		<value>Cím 1</value>
+	</data>
+	<data name="RVPage_Address_Address2" xml:space="preserve">
+		<value>Cím 2</value>
+	</data>
+	<data name="RVPage_Address_City" xml:space="preserve">
+		<value>Város</value>
+	</data>
+	<data name="RVPage_Address_Country" xml:space="preserve">
+		<value>Ország</value>
+	</data>
+	<data name="RVPage_Address_CurrentAddress" xml:space="preserve">
+		<value>Jelenlegi Cím: </value>
+	</data>
+	<data name="RVPage_Address_Headline" xml:space="preserve">
+		<value>cím</value>
+	</data>
+	<data name="RVPage_Address_LocationNotes" xml:space="preserve">
+		<value>Megjegyzés a helyszínről</value>
+	</data>
+	<data name="RVPage_Address_PostalCode" xml:space="preserve">
+		<value>Irányítószám</value>
+	</data>
+	<data name="RVPage_Address_StateDistrict" xml:space="preserve">
+		<value>Állam/Tartomány/Körzet</value>
+	</data>
+	<data name="RVPage_Address_Use" xml:space="preserve">
+		<value>Alkalmaz</value>
+	</data>
+	<data name="RVPage_Headline" xml:space="preserve">
+		<value>ÚJRALÁTOGATÁS HOZZÁADÁSA VAGY MÓDOSÍTÁSA</value>
+	</data>
+	<data name="RVPage_Info_Address" xml:space="preserve">
+		<value>CÍM</value>
+	</data>
+	<data name="RVPage_Info_Headline" xml:space="preserve">
+		<value>info</value>
+	</data>
+	<data name="RVPage_Info_PersonalInfo" xml:space="preserve">
+		<value>SZEMÉLYES INFORMÁCIÓ</value>
+	</data>
+	<data name="RVPage_Menu_AddVisit" xml:space="preserve">
+		<value>látogatás hozzáadása</value>
+	</data>
+	<data name="RVPage_Menu_Delete" xml:space="preserve">
+		<value>újralátogatás törlése</value>
+	</data>
+	<data name="RVPage_Menu_Email" xml:space="preserve">
+		<value>újralátogatás küldése e-mailben</value>
+	</data>
+	<data name="RVPage_Menu_Export" xml:space="preserve">
+		<value>mentés a telefonkönyvbe</value>
+	</data>
+	<data name="RVPage_Menu_Reset" xml:space="preserve">
+		<value>újrakezd</value>
+	</data>
+	<data name="RVPage_Menu_Save" xml:space="preserve">
+		<value>rögzít</value>
+	</data>
+	<data name="RVPage_Messages_Delete" xml:space="preserve">
+		<value>Biztos vagy benne, hogy törlöd az újralátogatást?</value>
+	</data>
+	<data name="RVPage_Messages_IncludeAllVisits" xml:space="preserve">
+		<value>Tartalamazza az összes látogatást?</value>
+	</data>
+	<data name="RVPage_Messages_IncludeAllVisits2" xml:space="preserve">
+		<value>Minden látogatást beleértve?</value>
+	</data>
+	<data name="RVPage_Messages_Saved" xml:space="preserve">
+		<value>Újralátogatás Rögzítve.</value>
+	</data>
+	<data name="RVPage_Personal_Age" xml:space="preserve">
+		<value>Kora</value>
+	</data>
+	<data name="RVPage_Personal_Description" xml:space="preserve">
+		<value>Személyleírás</value>
+	</data>
+	<data name="RVPage_Personal_FullName" xml:space="preserve">
+		<value>Teljes név</value>
+	</data>
+	<data name="RVPage_Personal_Headline" xml:space="preserve">
+		<value>személyes</value>
+	</data>
+	<data name="RVPage_Personal_PhoneNumber" xml:space="preserve">
+		<value>Telefonszám</value>
+	</data>
+	<data name="RVPage_Reminders_AddReminder" xml:space="preserve">
+		<value>Emlékeztető hozzáadása</value>
+	</data>
+	<data name="RVPage_Reminders_Headline" xml:space="preserve">
+		<value>emlékeztetők</value>
+	</data>
+	<data name="RVPage_Reminders_Notes" xml:space="preserve">
+		<value>Megjegyzések</value>
+	</data>
+	<data name="RVPage_Reminders_SelectDate" xml:space="preserve">
+		<value>Dátum Kiválasztása</value>
+	</data>
+	<data name="RVPage_Reminders_SelectTime" xml:space="preserve">
+		<value>Idő Kiválasztása</value>
+	</data>
+	<data name="RVPage_Visits_DaysSinceDays" xml:space="preserve">
+		<value> nap telt el a látogatás óta</value>
+	</data>
+	<data name="RVPage_Visits_Headline" xml:space="preserve">
+		<value>látogatások</value>
+	</data>
+	<data name="SettingsPage_About_AppVersion" xml:space="preserve">
+		<value>Alkalmazás Verzió: </value>
+	</data>
+	<data name="SettingsPage_About_Copyright" xml:space="preserve">
+		<value>Copyright 2014 Square.HipToBe</value>
+	</data>
+	<data name="SettingsPage_About_CoreVersion" xml:space="preserve">
+		<value>Mag Verzió: </value>
+	</data>
+	<data name="SettingsPage_About_Donate" xml:space="preserve">
+		<value>adomány a fejlesztőnek</value>
+	</data>
+	<data name="SettingsPage_About_Headline" xml:space="preserve">
+		<value>a programról</value>
+	</data>
+	<data name="SettingsPage_About_Help" xml:space="preserve">
+		<value>ha kérdésed lenne</value>
+	</data>
+	<data name="SettingsPage_About_Links" xml:space="preserve">
+		<value>LINKEK</value>
+	</data>
+	<data name="SettingsPage_About_OpenSource" xml:space="preserve">
+		<value>OPEN SOURCE</value>
+	</data>
+	<data name="SettingsPage_About_Rate" xml:space="preserve">
+		<value>értékeld ezt az applikációt</value>
+	</data>
+	<data name="SettingsPage_About_ReportIssue" xml:space="preserve">
+		<value>hiba jelzés</value>
+	</data>
+	<data name="SettingsPage_About_ThisAppFOSS" xml:space="preserve">
+		<value>Ez az alkalmazás nyílt forrás kódú!</value>
+	</data>
+	<data name="SettingsPage_About_Version" xml:space="preserve">
+		<value>Verzió</value>
+	</data>
+	<data name="SettingsPage_Settings_AddCallPlacements" xml:space="preserve">
+		<value>Automatikus UL számolás</value>
+	</data>
+	<data name="SettingsPage_Settings_AppSettings" xml:space="preserve">
+		<value>ALKALMAZÁS BEÁLLÍTÁSOK</value>
+	</data>
+	<data name="SettingsPage_Settings_BeautifyPhoneNumbers" xml:space="preserve">
+		<value>Szép Telefon Számok (Csak USA)</value>
+	</data>
+	<data name="SettingsPage_Settings_CSO" xml:space="preserve">
+		<value>Gyülekezeti Titkár vagy Szolgálat Felvigyázó</value>
+	</data>
+	<data name="SettingsPage_Settings_CSO_Message1" xml:space="preserve">
+		<value>Érintsd meg itt, és válaszd ki a kapcsolatot a telefonkönyvedből.</value>
+	</data>
+	<data name="SettingsPage_Settings_DefaultAge" xml:space="preserve">
+		<value>Korod</value>
+	</data>
+	<data name="SettingsPage_Settings_DeleteCallsAndRv" xml:space="preserve">
+		<value>Látogatások törlése</value>
+	</data>
+	<data name="SettingsPage_Settings_DeleteCallsRvNote" xml:space="preserve">
+		<value>MEGJEGYZÉS: A látogatások törlése, törölni fogja az UL-t a jelentésedről.</value>
+	</data>
+	<data name="SettingsPage_Settings_Email" xml:space="preserve">
+		<value>E-mail</value>
+	</data>
+	<data name="SettingsPage_Settings_Headline" xml:space="preserve">
+		<value>beállítások</value>
+	</data>
+	<data name="SettingsPage_Settings_NickName" xml:space="preserve">
+		<value>BECENÉV</value>
+	</data>
+	<data name="SettingsPage_Settings_PersonalSettings" xml:space="preserve">
+		<value>SZEMÉLYES BEÁLLÍTÁSOK</value>
+	</data>
+	<data name="SettingsPage_Settings_PlacementsMessage1" xml:space="preserve">
+		<value>Ha nem kívánod, hogy rögzítse az újralátogatásokat, az alkalmazásban válaszd a "KI" lehetőséget, így manuálisan rögzítheted az újralátogatásokat az idő hozzáadása oldalon. Amennyiben a "BE" opciót jelölted ki, úgy az újralátogatások számai bele számítanak a havi jelentésedbe. A "KI" lehetőség esetén, meg kell adnod a terjesztett anyagokat kétszer (az látogatások és az idő hozzáadása oldalon is).</value>
+	</data>
+	<data name="SettingsPage_Settings_PrivacyPolicy" xml:space="preserve">
+		<value>Adatvédelmi Nyilatkozat: Ez az alkalmazás helymeghatárózó szolgáltatást használ, hogy megtalálja a címet, amikor rögzítessz egy új újralátogatást. Amikor az adott címhelyen tartózkodsz, a GPS helymeghatározó rögzíti a földrajzi adataidat és keresi a hozzá tartozó pontos címet. Az eredményt nem tárolja és nem továbbítja.</value>
+	</data>
+	<data name="SettingsPage_Settings_RoundTime" xml:space="preserve">
+		<value>Kerekítési Idő (Percnyi lépésekben)</value>
+	</data>
+	<data name="SettingsPage_Settings_SendMethod" xml:space="preserve">
+		<value>Alapértelmezett küldési mód</value>
+	</data>
+	<data name="SettingsPage_Settings_SharingOptions" xml:space="preserve">
+		<value>MEGOSZTÁSI OPCIÓK</value>
+	</data>
+	<data name="SettingsPage_Settings_SignatureMessage" xml:space="preserve">
+		<value>tartalmazza a 'Szántóföldi Szolgálat' aláírást</value>
+	</data>
+	<data name="SettingsPage_Settings_SignatureMessage2" xml:space="preserve">
+		<value>Az aláírás csak az e-mailben küldött jelentések végére kerül. SMS jelentések végéről lehagyjuk.</value>
+	</data>
+	<data name="SettingsPage_Settings_SMS" xml:space="preserve">
+		<value>SMS</value>
+	</data>
+	<data name="SettingsPage_Settings_UseLocServices" xml:space="preserve">
+		<value>Helymeghatározó Szolgáltatás Használata</value>
+	</data>
+	<data name="TimeReport_AuxHoursAndMinutes" xml:space="preserve">
+		<value>{0} Óra és {1} Perc Önkéntes Munka</value>
+	</data>
+	<data name="TimeReport_HoursAndMinutes" xml:space="preserve">
+		<value>{0} Óra és ; {1} Perc</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Books" xml:space="preserve">
+		<value> Könyvek</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Brochures" xml:space="preserve">
+		<value> Füzetek</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Magazines" xml:space="preserve">
+		<value> Folyóiratok</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Menu_Edit" xml:space="preserve">
+		<value>Szerkesztés</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Notes" xml:space="preserve">
+		<value>MEGJEGYZÉSEK</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Placements" xml:space="preserve">
+		<value>TERJESZTÉSEK</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Rv" xml:space="preserve">
+		<value>ÚJRALÁTOGATÁSOK</value>
+	</data>
+	<data name="AddTimePage_Tracts" xml:space="preserve">
+		<value>Tájékoztató lapok</value>
+	</data>
+	<data name="MainPage_Report_Tracts" xml:space="preserve">
+		<value>Tájékoztató lapok:	{0}
+</value>
+	</data>
+	<data name="MainPage_Time_Tracts" xml:space="preserve">
+		<value>Tájékoztató Lapok</value>
+	</data>
+	<data name="ReportingPage_Chart_Header" xml:space="preserve">
+		<value>diagramm</value>
+	</data>
+	<data name="ReportingPage_Chart_YourTime" xml:space="preserve">
+		<value>IDŐD</value>
+	</data>
+	<data name="ReportingPage_Report_Tracts" xml:space="preserve">
+		<value> Tájékoztató lapok</value>
+	</data>
+	<data name="AddCallPage_Tracts" xml:space="preserve">
+		<value>Tájékoztató lapok</value>
+	</data>
+	<data name="HowTo_Header" xml:space="preserve">
+		<value>új verzió!</value>
+	</data>
+	<data name="HowTo_WhatsNext_I1" xml:space="preserve">
+		<value>1.  Házról-házra feljegyzés támogatása.
+2.  "nincs otthon" rögzítése az újralátogatáshoz.</value>
+	</data>
+	<data name="HowTo_WhatsNext_T1" xml:space="preserve">
+		<value>Mire számíthatsz még?</value>
+	</data>
+	<data name="Reporting_ReportHeader" xml:space="preserve">
+		<value>Szántóföldi Szolgálati Jelentés {0} részére:
+
+</value>
+	</data>
+	<data name="SettingsPage_FAQ_Headline" xml:space="preserve">
+		<value>GYIK</value>
+	</data>
+	<data name="SettingsPage_FAQ_HowToEnterRVs_A" xml:space="preserve">
+		<value>Két módja van az újralátogatások megadásának, hogy azok megjelenjenek a jelentésedben:
+1.       A beépített UL adatbázis használatával.
+	a.       Rögzíts egy új UL-t vagy lépj be egy meglévő UL-be.
+	b.      A Szervezetten könyvünk alapján az első látogatást nem számoljuk UL-nek, így az nem is jelenik meg a jelentésedben, de minden további látogatás automatikusan meg fog jelenni a jelentésedben.
+2.       Manuálisan számolva az UL-eket
+	a.      Ez a módszer csak akkor működik, ha nem akarod használni az első lehetőséget. Nem tudod mind a két lehetőséget egyszerre használni.
+	b.     A manuális UL-ek bekapcsolásához menj a: “Beállítások és Automatikus UL számolás”-ra és állítsd "KI"-re.
+	c.       Most már lehetőséged lesz arra, hogy manuálisan számold az UL-eket az idő hozzáadása oldalon.</value>
+	</data>
+	<data name="SettingsPage_FAQ_HowToEnterRVs_Q" xml:space="preserve">
+		<value>Hogyan adhatom meg az UL-ek számát a jelentésemben?</value>
+	</data>
+	<data name="SettingsPage_FAQ_WhyDontRVShow_A" xml:space="preserve">
+		<value>A Szervezetten könyvünk szerint, a kezdeti látogatás nem számít bele a jelentésbe. Újra látogatásnak csak az első, kezdeti látogatás után következő, látogatást nevezzük. Ha importáltad az újra látogatást, és már a kezdeti kapcsolatot is, akkor létre kell hozni egy "üres" kezdeti látogatást annak érdekében, hogy az újra látogatás beleszámítson a jelentésbe. Ha nem használod az újra látogatás funkcióját ennek az alkalmazásnak, akkor menj a " Beállítások és UL-ek Automatikus számolása ", és válaszd a "ki", opciót, így képes leszel arra, hogy manuálisan nyomon kövesd az UL-jeidet.</value>
+	</data>
+	<data name="SettingsPage_FAQ_WhyDontRVShow_Q" xml:space="preserve">
+		<value>Miért nem az én újralátogatásaim jelennek meg a jelentésemben?</value>
+	</data>
+	<data name="ViewPreviousVisitPage_Tracts" xml:space="preserve">
+		<value> Tájékoztató lapok</value>
+	</data>
+	<data name="MainPage_MainMenu_HouseToHouseRecords" xml:space="preserve">
+		<value>házról-házra</value>
+	</data>
+	<data name="StreetBuildingList_HouseCountFormatString" xml:space="preserve">
+		<value>{0} Nincs otthon</value>
+	</data>
+	<data name="StreetBuildingList_PageName" xml:space="preserve">
+		<value>utca/épület lista</value>
+	</data>
+	<data name="TerritoryCard_PageName" xml:space="preserve">
+		<value>terület kártya</value>
+	</data>
+	<data name="TerritoryList_Appbar_Add" xml:space="preserve">
+		<value>hozzáadás</value>
+	</data>
+	<data name="TerritoryList_PageName" xml:space="preserve">
+		<value>terület lista</value>
+	</data>
+	<data name="TerritoryList_StreetCountFormatString" xml:space="preserve">
+		<value>{0} utca.</value>
+	</data>
+	<data name="TerritoryList_TerritoryNumberFormatString" xml:space="preserve">
+		<value>Terület # {0}</value>
+	</data>
+	<data name="TimeCalc_BreakTime" xml:space="preserve">
+		<value>SZÜNET</value>
+	</data>
+	<data name="TimeCalc_CANCEL" xml:space="preserve">
+		<value>töröl</value>
+	</data>
+	<data name="TimeCalc_EndTime" xml:space="preserve">
+		<value>BEFEJEZÉS IDEJE</value>
+	</data>
+	<data name="TimeCalc_OK" xml:space="preserve">
+		<value>ok</value>
+	</data>
+	<data name="TimeCalc_StartTime" xml:space="preserve">
+		<value>KEZDÉS IDEJE</value>
+	</data>
+	<data name="General_HoursAndMinutes" xml:space="preserve">
+		<value>h' óra 'm' perc'</value>
+	</data>
+	<data name="General_SelectTime" xml:space="preserve">
+		<value>Idő Választás</value>
+	</data>>
+	<data name="HowTo_WhatsNew" xml:space="preserve">
+		<value>Újdonságok</value>
+	</data>
+	<data name="FullRVListPage_NoVisitsSaved" xml:space="preserve">
+		<value>No Previous Visits!</value>
+	</data>
+	<data name="AddTimePage_MustBeMinimum" xml:space="preserve">
+		<value>Minimális idő: {0} perc</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextSettings" xml:space="preserve">
+		<value>NAPI SZÖVEG BEÁLLÍTÁS</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextURL" xml:space="preserve">
+		<value>URL</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextInstructions" xml:space="preserve">
+		<value>Menj a http://wol.jw.org címre, és navigálj a napi szöveg oldalra. Másold be az URL címet az alábbi mezőbe.</value>
+	</data>
+	<data name="Application_CustomDailyTextURL" xml:space="preserve">
+		<value>http://wol.jw.org/{0}/wol/dt/{1}/{2}/{3}/{4}/{5}</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextUseCustom" xml:space="preserve">
+		<value>Használj Egyedi Napi Szöveget URL</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextErrorUrl" xml:space="preserve">
+		<value>Nem értelmezhető URL cím, próbáld újra.</value>
+	</data>
+	<data name="SettingsPage_Settings_DailyTextErrorUrlNotSet" xml:space="preserve">
+		<value>Kérlek, elsőnek az URL címet írd be!</value>
+	</data>
+	<data name="SettingsPage_Settings_TimeGoalNote" xml:space="preserve">
+		<value>Add meg a Havi célodat (órában)</value>
+	</data>
+	<data name="SettingsPage_Settings_TimeGoal" xml:space="preserve">
+		<value>CÉL</value>
+	</data>
+	<data name="ReportingPage_Report_GoalText1" xml:space="preserve">
+		<value>CÉL: </value>
+	</data>
+	<data name="ReportingPage_Report_GoalText2" xml:space="preserve">
+		<value>{0} ÓRA {1} HÓNAP ALATT</value>
+	</data>
+	<data name="ReportingPage_Report_RemainingText1" xml:space="preserve">
+		<value>HÁTRALÉVŐ IDŐ: </value>
+	</data>
+	<data name="ReportingPage_Report_RemainingText2" xml:space="preserve">
+		<value>{0} ÓRA és; {1} PERC</value>
+	</data>
+	<data name="RVPage_Messages_SavedFailed" xml:space="preserve">
+		<value>Újralátogatás mentése Sikertelen!</value>
+	</data>
+	<data name="RVPage_Messages_FillOutAddressBeforeSaving" xml:space="preserve">
+		<value>Kérlek, töltsd ki a címet, mielőtt mentenéd!</value>
+	</data>
+	<data name="RVPage_Messages_SaveBeforeAddingCall" xml:space="preserve">
+		<value>Kérlek ments, mielőtt egy látogatást rögzítenél.</value>
+	</data>
+	<data name="RVPage_Contact_Notes" xml:space="preserve">
+		<value>Kor: {0}
+Gender: {1}
+Physical Description: {2}
+Other Notes: {3}</value>
+	</data>
+	<data name="RVPage_Reminders_Messages_ReminderPastNow" xml:space="preserve">
+		<value>Az emlékeztetőnek előbb kell lennie, mint a jelenlegi idő.</value>
+	</data>
+	<data name="RVPage_Reminders_ReminderAdded" xml:space="preserve">
+		<value>Emlékeztető hozzáadva.</value>
+	</data>
+	<data name="RVPage_Reminders_ReminderTitle" xml:space="preserve">
+		<value>Szántóföldi Szolgálat Emlékeztető ({0})</value>
+	</data>
+	<data name="RVPage_Share_Body" xml:space="preserve">
+		<value>Név: {0}
+Telefonszán: {1}
+Cím1: {2}
+Cím2: {3}
+Város/Megye/Irányítószám: {4}, {5} {6}
+Ország: {7}
+Hely információk: {8}
+Kora: {9}
+Neme: {10}
+Megjegyzések: {11}
+</value>
+	</data>
+	<data name="TelerikRadDatePicker_EmptyDateContent" xml:space="preserve">
+		<value>válassz dátumot</value>
+	</data>
+	<data name="TelerikRadDatePicker_DatePickerPopupHeader" xml:space="preserve">
+		<value>VÁLASSZ DÁTUMOT</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimePickerPopupHeader" xml:space="preserve">
+		<value>VÁLASZD KI AZ IDŐT</value>
+	</data>
+	<data name="TelerikRadDatePicker_EmptyTimeContent" xml:space="preserve">
+		<value>Válaszd ki az időt</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanPickerPopupHeader" xml:space="preserve">
+		<value>IDŐSZAK KIVÁLASZTÁSA</value>
+	</data>
+	<data name="TelerikRadDatePicker_EmptyTimeSpanContent" xml:space="preserve">
+		<value>Időszak kiválasztása</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanSecond" xml:space="preserve">
+		<value>másodperc</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanMinute" xml:space="preserve">
+		<value>perc</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanHour" xml:space="preserve">
+		<value>óra</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanDay" xml:space="preserve">
+		<value>nap</value>
+	</data>
+	<data name="TelerikRadDatePicker_TimeSpanWeek" xml:space="preserve">
+		<value>weeks</value>
+	</data>
+	<data name="TelerikRadDatePicker_LeapYear" xml:space="preserve">
+		<value>Szökőév</value>
+	</data>
+	<data name="TelerikRadDatePicker_CancelButttonText" xml:space="preserve">
+		<value>Törlés</value>
+	</data>
+	<data name="TelerikRadDatePicker_OkButtonText" xml:space="preserve">
+		<value>Kész</value>
+	</data>
+	<data name="Sharing_Signature" xml:space="preserve">
+		<value>"
+		
+		
+U.I. - Ez a jelentés a "Field Service" nevű Applikációval készült az én Windows telefonommal! Ha szeretnéd te is kipróbálni ezt az App-ot, csak töltsd le az Áruházból!</value>
+	</data>
+	<data name="Sharing_Thanks" xml:space="preserve">
+		<value>
+			
+Köszönöm</value>
+	</data>
+	<data name="Sharing_Subject" xml:space="preserve">
+		<value>Szántőföldi Szolgálati Jelentés</value>
+	</data>
+	<data name="HowTo_WhatsNew_Goal_1" xml:space="preserve">
+		<value>A jelentést megjeleníti a mérőeszközt a cél (óra), és a tényleges munkaórák számát. 
+Ez a nyomtáv automatikusan követni Ha akár egy hónap, vagy több hónapig, majd állítsa be a cél kell. </value>
+	</data>
+	<data name="HowTo_WhatsNew_Goal_2" xml:space="preserve">
+		<value>Állítsa be a havi cél Beállítások &gt; havi cél.</value>
+	</data>
+	<data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
+		<value> hét óta látogatás</value>
+	</data>
+	<data name="RVPage_Visits_DaysSinceMonths" xml:space="preserve">
+		<value> hónap óta látogatás</value>
+	</data>
+	<data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
+		<value> év(ek) óta látogatás</value>
+	</data>
+</root>

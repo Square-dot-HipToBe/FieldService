@@ -1,0 +1,96 @@
+﻿<phone:PhoneApplicationPage
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Toolkit;assembly=Coding4Fun.Phone.Controls.Toolkit"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+	xmlns:ViewModels="clr-namespace:FieldService.ViewModels"
+	xmlns:FieldService="clr-namespace:FieldService"
+	xmlns:view="clr-namespace:FieldService.View"
+	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+	x:Class="FieldService.View.RBCTimePage" 
+	SupportedOrientations="Portrait" Orientation="Portrait"
+	mc:Ignorable="d" d:DesignHeight="728" d:DesignWidth="480"
+	shell:SystemTray.IsVisible="true"
+    shell:SystemTray.BackgroundColor="{StaticResource AppAccentColor}"
+    shell:SystemTray.ForegroundColor="{StaticResource AppForegroundColor}"
+    Loaded="PhoneApplicationPage_Loaded" >
+
+    <shell:SystemTray.ProgressIndicator>
+        <shell:ProgressIndicator IsVisible="True" Text="{Binding Path=StringResources.ApplicationName, Source={StaticResource LocalizedStrings}}" IsIndeterminate="False"/>
+    </shell:SystemTray.ProgressIndicator>
+
+
+    <phone:PhoneApplicationPage.Resources>
+		<FieldService:MinutesToTimeSpanValueConverter x:Key="MinutesToTimeSpanValueConverter"/>
+	</phone:PhoneApplicationPage.Resources>
+	<phone:PhoneApplicationPage.Background>
+		<StaticResource ResourceKey="AppBackgroundBrush"/>
+	</phone:PhoneApplicationPage.Background>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="AppForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+
+	<phone:PhoneApplicationPage.DataContext>
+		<ViewModels:AddModifyRBCTimeViewModel/>
+	</phone:PhoneApplicationPage.DataContext>
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot"  Background="{StaticResource AppBackgroundBrush}">
+		<Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+        <view:TimeCalcControl Grid.Row="0" Visibility="Collapsed" FormClosed="TimeCalcControl_OnFormClosed" HorizontalContentAlignment="Stretch" x:Name="TimeCalc" />
+        <!--TitlePanel contains the name of the application and page title-->
+		<StackPanel Grid.Row="1" Margin="10">
+			<TextBlock Foreground="{StaticResource AppForegroundBrush}" Text="{Binding Path=StringResources.AddRBCTimePage_Headline, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+		</StackPanel>
+
+		<Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
+			<StackPanel Orientation="Vertical">
+				<TextBlock Text="{Binding Path=StringResources.AddRBCTimePage_Note, Source={StaticResource LocalizedStrings}}" TextWrapping="Wrap" FontSize="15" />
+				<FieldService:HeaderControl IconSource="/icons/calendar.png"  HeaderText="{Binding Path=StringResources.AddRBCTimePage_Date, Source={StaticResource LocalizedStrings}}" Margin="15,0,0,0" />
+                <telerikInput:RadDatePicker x:Name="dpDatePicker" EmptyContent="{Binding Path=StringResources.TelerikRadDatePicker_EmptyDateContent, Source={StaticResource LocalizedStrings}}"  Value="{Binding RBCTimeData.Date, Mode=TwoWay}" Template="{StaticResource RadDatePickerControlTemplateApp}" PickerButtonStyle="{StaticResource PickerBoxToggleButtonAppDefaultStyle}" />
+                <Grid>
+				    <FieldService:HeaderControl IconSource="/icons/clock.png" HeaderText="{Binding Path=StringResources.AddRBCTimePage_Time, Source={StaticResource LocalizedStrings}}" Margin="15,0,0,0" />
+                    <Button Click="TimeCalcButton_OnClick" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0" Padding="0" BorderThickness="0">
+                        <Button.Content>
+                            <Image Source="/icons/Device-Calculator.png" Width="30" Height="30"/>
+                        </Button.Content>
+                    </Button>
+                </Grid>
+                <telerikInput:RadTimeSpanPicker DisplayValueFormat="{Binding Path=StringResources.General_HoursAndMinutes, Source={StaticResource LocalizedStrings}}" SelectorFormat="hm" MaxValue="23:00:00" Step="{Binding AppSettings.roundTimeIncrement, Converter={StaticResource MinutesToTimeSpanValueConverter}, Source={StaticResource AppSettings}}" Value="{Binding RBCTimeDataMinutes, Converter={StaticResource MinutesToTimeSpanValueConverter}, Mode=TwoWay}" Style="{StaticResource RadTimeSpanPickerAppStyle}" PickerButtonStyle="{StaticResource PickerBoxToggleButtonAppDefaultStyle}" />
+				<!--<c4f:TimeSpanPicker ValueStringFormat="{}{0:h} Hours and {0:m} Minutes" x:Name="tspTime" Step="{Binding AppSettings.roundTimeIncrement, Converter={StaticResource MinutesToTimeSpanValueConverter}, Source={StaticResource AppSettings}}" Value="{Binding RBCTimeDataMinutes, Converter={StaticResource MinutesToTimeSpanValueConverter}, Mode=TwoWay}" Template="{StaticResource TimeSpanPickerControlAppDefaultTemplate}" />-->
+				<FieldService:HeaderControl IconSource="/icons/tasks.png" HeaderText="{Binding Path=StringResources.AddRBCTimePage_Notes, Source={StaticResource LocalizedStrings}}" Margin="15,0,0,0" />
+			</StackPanel>
+		</Grid>
+		
+		<Grid x:Name="NotesPanel" Grid.Row="3" >
+            <telerikPrimitives:RadTextBox Margin="1,1,1,10" InputScope="Text" x:Name="tbNotes" TextWrapping="Wrap" Text="{Binding RBCTimeData.Notes, Mode=TwoWay}" AcceptsReturn="True" Height="{Binding ElementName=NotesPanel, Path=ActualHeight}" Style="{StaticResource RadTextBoxAppDefaultStyle}" />
+		</Grid>
+	</Grid>
+
+	<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="{StaticResource AppAccentColor}" ForegroundColor="{StaticResource AppForegroundColor}" IsMenuEnabled="True" IsVisible="True">
+			<shell:ApplicationBar.MenuItems>
+				<shell:ApplicationBarMenuItem x:Name="abmiConvertToRegTime" Text="convert" Click="abmiConvertToRegTime_Click_1" />
+				<shell:ApplicationBarMenuItem x:Name="abmiDelete" Text="delete" Click="abmiDelete_Click_1" />
+			</shell:ApplicationBar.MenuItems>
+
+			<shell:ApplicationBarIconButton Text="save" IconUri="/icons/appbar.save.rest.png" x:Name="abibSave" Click="abibSave_Click_1" />
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
