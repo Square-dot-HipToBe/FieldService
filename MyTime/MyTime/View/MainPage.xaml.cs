@@ -570,7 +570,23 @@ namespace FieldService.View
             body += tTs > 0 ? string.Format(StringResources.MainPage_Report_Tracts, tTs) : string.Empty;
             body += tRv > 0 ? string.Format(StringResources.MainPage_Report_RVs, tRv) : string.Empty;
             body += tBs > 0 ? string.Format(StringResources.MainPage_Report_BibleStudies, tBs) : string.Empty;
-
+            if (
+                MessageBox.Show(StringResources.Reporting_IncludeAuxiliaryDetail, string.Empty,
+                    MessageBoxButton.OKCancel) == MessageBoxResult.OK)
+            {
+                var rbcList = RBCTimeDataInterface.GetRBCTimeEntries(from, tod, SortOrder.DateOldestToNewest);
+                if (rbcList == null)
+                {
+                    Reporting.SendReport(body);
+                    return;
+                }
+                body += "-------------------\n";
+                body += string.Format(StringResources.MainPage_Report_AuxHours, string.Empty);
+                foreach (var r in rbcList)
+                {
+                    body += string.Format("{0}/{1} - ({2} {3}): {4}\n", r.Date.Month, r.Date.Day, r.Hours, StringResources.TelerikRadDatePicker_TimeSpanHour, r.Notes);
+                }
+            }
 
             Reporting.SendReport(body);
         }

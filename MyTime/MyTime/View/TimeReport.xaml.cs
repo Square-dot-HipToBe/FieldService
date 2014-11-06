@@ -46,20 +46,20 @@ namespace FieldService.View
 		private DateTime _toDate;
 
 
-	        /// <summary>
-	        /// Initializes a new instance of the <see cref="TimeReport" /> class.
-	        /// </summary>
-	        public TimeReport()
-	        {
-                this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentUICulture.Name);
-	                DataContext = new TimeReportViewModel();
+			/// <summary>
+			/// Initializes a new instance of the <see cref="TimeReport" /> class.
+			/// </summary>
+			public TimeReport()
+			{
+				this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentUICulture.Name);
+					DataContext = new TimeReportViewModel();
 
-                        ((TimeReportViewModel) DataContext).TimeReportMajorStep = ((TimeReportViewModel)DataContext).icReport.Count > 1 ? 10 : 2;
+						((TimeReportViewModel) DataContext).TimeReportMajorStep = ((TimeReportViewModel)DataContext).icReport.Count > 1 ? 10 : 2;
 
-                        InitializeComponent();
-	        }
+						InitializeComponent();
+			}
 
-	        #region Events
+			#region Events
 
 		/// <summary>
 		/// Handles the Loaded event of the PhoneApplicationPage control.
@@ -68,7 +68,7 @@ namespace FieldService.View
 		/// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
 		private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
 		{
-                        tbDisclaimer.Visibility = ((TimeReportViewModel)DataContext).icReport.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
+						tbDisclaimer.Visibility = ((TimeReportViewModel)DataContext).icReport.Count > 1 ? Visibility.Visible : Visibility.Collapsed;
 
 			var menuItem = ApplicationBar.MenuItems[0] as ApplicationBarMenuItem;
 			if (menuItem != null) {
@@ -97,31 +97,42 @@ namespace FieldService.View
 			//var entries = new ChartData();
 
 			string body = string.Empty;
-                        foreach (TimeReportSummaryModel entry in ((TimeReportViewModel)DataContext).icReport) {
+						foreach (TimeReportSummaryModel entry in ((TimeReportViewModel)DataContext).icReport) {
 				body += string.Format(StringResources.Reporting_ReportHeader, entry.Month);
-                                body += string.Format(StringResources.MainPage_Report_Hours, (entry.Minutes/60.0));
-                                body += entry.Magazines > 0
-                                        ? string.Format(StringResources.MainPage_Report_Mags, entry.Magazines)
-                                        : string.Empty;
-                                body += entry.Books > 0
-                                        ? string.Format(StringResources.MainPage_Report_Books, entry.Books)
-                                        : string.Empty;
-                                body += entry.Brochures > 0
-                                        ? string.Format(StringResources.MainPage_Report_Brochures, entry.Brochures)
-                                        : string.Empty;
-                                body += entry.Tracts > 0
-                                        ? string.Format(StringResources.MainPage_Report_Tracts, entry.Tracts)
-                                        : string.Empty;
-                                body += entry.ReturnVisits > 0
-                                        ? string.Format(StringResources.MainPage_Report_RVs, entry.ReturnVisits)
-                                        : string.Empty;
-                                body += entry.BibleStudies > 0
-                                        ? string.Format(StringResources.MainPage_Report_BibleStudies, entry.BibleStudies)
-                                        : string.Empty;
-                                body += entry.RBCHours > 0
-                                        ? string.Format(StringResources.MainPage_Report_AuxHours, entry.RBCHours)
-                                        : string.Empty;
-				body += "\n\n";
+								body += string.Format(StringResources.MainPage_Report_Hours, (entry.Minutes/60.0));
+								body += entry.Magazines > 0
+										? string.Format(StringResources.MainPage_Report_Mags, entry.Magazines)
+										: string.Empty;
+								body += entry.Books > 0
+										? string.Format(StringResources.MainPage_Report_Books, entry.Books)
+										: string.Empty;
+								body += entry.Brochures > 0
+										? string.Format(StringResources.MainPage_Report_Brochures, entry.Brochures)
+										: string.Empty;
+								body += entry.Tracts > 0
+										? string.Format(StringResources.MainPage_Report_Tracts, entry.Tracts)
+										: string.Empty;
+								body += entry.ReturnVisits > 0
+										? string.Format(StringResources.MainPage_Report_RVs, entry.ReturnVisits)
+										: string.Empty;
+								body += entry.BibleStudies > 0
+										? string.Format(StringResources.MainPage_Report_BibleStudies, entry.BibleStudies)
+										: string.Empty;
+								body += entry.RBCHours > 0
+										? string.Format(StringResources.MainPage_Report_AuxHours, entry.RBCHours)
+										: string.Empty;
+								if ( MessageBox.Show(StringResources.Reporting_IncludeAuxiliaryDetail, string.Empty, MessageBoxButton.OKCancel) == MessageBoxResult.OK) {
+									var rbcList = RBCTimeDataInterface.GetRBCTimeEntries(_fromDate, _toDate, SortOrder.DateOldestToNewest);
+									if (rbcList == null) {
+										Reporting.SendReport(body);
+										return;
+									}
+									body += "-------------------\n";
+									body += string.Format(StringResources.MainPage_Report_AuxHours, string.Empty);
+									foreach (var r in rbcList) {
+										body += string.Format("{0}/{1} - ({2} {3}): {4}\n", r.Date.Month, r.Date.Day, r.Hours, StringResources.TelerikRadDatePicker_TimeSpanHour, r.Notes);
+									}
+								}
 			}
 
 			Reporting.SendReport(body);
@@ -139,13 +150,13 @@ namespace FieldService.View
 					NavigationService.GoBack();
 				_fromDate = DateTime.ParseExact(fromStr, "MM-dd-yyyy", CultureInfo.InvariantCulture);
 				_toDate = DateTime.ParseExact(toStr, "MM-dd-yyyy", CultureInfo.InvariantCulture);
-			    ((TimeReportViewModel) DataContext).TimeReportPeriod = ((_toDate.Year - _fromDate.Year)*12) + _toDate.Month -
-			                                                           _fromDate.Month+1;
-			    try {
-			        string header = StringResources.ApplicationName;
-			        NavigationContext.QueryString.TryGetValue("header", out header);
-			        pMainPivot.Title = (header ?? string.Format("{0:d} - {1:d}",_fromDate,_toDate)).ToUpper();
-			    } catch {}
+				((TimeReportViewModel) DataContext).TimeReportPeriod = ((_toDate.Year - _fromDate.Year)*12) + _toDate.Month -
+																	   _fromDate.Month+1;
+				try {
+					string header = StringResources.ApplicationName;
+					NavigationContext.QueryString.TryGetValue("header", out header);
+					pMainPivot.Title = (header ?? string.Format("{0:d} - {1:d}",_fromDate,_toDate)).ToUpper();
+				} catch {}
 				RefreshTimeReport();
 			} catch (Exception ee) {
 				NavigationService.GoBack();
@@ -154,71 +165,71 @@ namespace FieldService.View
 
 		private void RefreshTimeReport()
 		{
-                        tbFromDate.Text =  _fromDate.ToShortDateString();
-                        tbToDate.Text =  _toDate.ToShortDateString();
+						tbFromDate.Text =  _fromDate.ToShortDateString();
+						tbToDate.Text =  _toDate.ToShortDateString();
 
-		        var bw = new BackgroundWorker();
-		        bw.RunWorkerCompleted +=
-		                (sender, args) =>
-		                        ((TimeReportViewModel) this.DataContext).LoadTimeReport(Reporting.BuildTimeReport(_fromDate,
-		                                _toDate, SortOrder.DateOldestToNewest));
-                        bw.RunWorkerAsync();
-		    
+				var bw = new BackgroundWorker();
+				bw.RunWorkerCompleted +=
+						(sender, args) =>
+								((TimeReportViewModel) this.DataContext).LoadTimeReport(Reporting.BuildTimeReport(_fromDate,
+										_toDate, SortOrder.DateOldestToNewest));
+						bw.RunWorkerAsync();
+			
 
 		}
 
-	    private void ChartTrackBallBehavior_OnTrackInfoUpdated(object sender, TrackBallInfoEventArgs e)
-	    {
-	            e.Header = "";
-	            foreach (var info in e.Context.DataPointInfos)
-	            {
-	                    var dp = info.DataPoint as CategoricalDataPoint;
-	                    info.DisplayHeader = dp.Category+":";
-                            info.DisplayContent = string.Format(StringResources.TimeReport_HoursAndMinutes, ((int)dp.Value), (60 * (dp.Value - ((int)dp.Value))));
-	            }
-	    }
+		private void ChartTrackBallBehavior_OnTrackInfoUpdated(object sender, TrackBallInfoEventArgs e)
+		{
+				e.Header = "";
+				foreach (var info in e.Context.DataPointInfos)
+				{
+						var dp = info.DataPoint as CategoricalDataPoint;
+						info.DisplayHeader = dp.Category+":";
+							info.DisplayContent = string.Format(StringResources.TimeReport_HoursAndMinutes, ((int)dp.Value), (60 * (dp.Value - ((int)dp.Value))));
+				}
+		}
 
-	    private void MyChart_OnTap(object sender, GestureEventArgs e)
-	    {
-	            //throw new NotImplementedException();
-	    }
+		private void MyChart_OnTap(object sender, GestureEventArgs e)
+		{
+				//throw new NotImplementedException();
+		}
 
-	    private void UIElement_OnTap(object sender, GestureEventArgs e)
-	    {
-	        var bw = new BackgroundWorker();
-	        bw.DoWork += (o, args) => Thread.Sleep(1000);
-	        bw.RunWorkerCompleted += (o, args) => RefreshTimeReport();
+		private void UIElement_OnTap(object sender, GestureEventArgs e)
+		{
+			var bw = new BackgroundWorker();
+			bw.DoWork += (o, args) => Thread.Sleep(1000);
+			bw.RunWorkerCompleted += (o, args) => RefreshTimeReport();
 
-            bw.RunWorkerAsync();
-	    }
+			bw.RunWorkerAsync();
+		}
 	}
 
 
 
 
 
-        //// Class for storing activities
-        ///// <summary>
-        ///// Class ChartData
-        ///// </summary>
-        //public class ChartData : List<TimeChartInfo>
-        //{
-        //        /// <summary>
-        //        /// Initializes a new instance of the <see cref="ChartData" /> class.
-        //        /// </summary>
-        //        public ChartData()
-        //        {
-        //                if (((TimeReportViewModel)DataContext).icReport.Count > 1) {
-        //                        foreach (TimeReportSummaryModel v in App.ViewModel.icReport) {
-        //                                Add(new TimeChartInfo { Header = new String(v.Month.Take(3).ToArray()), Time = (v.Minutes / 60.0) });
-        //                        }
-        //                } else {
-        //                        foreach (TimeReportEntryViewModel v in App.ViewModel.lbTimeEntries) {
-        //                                Add(new TimeChartInfo { Header = string.Format("{0}/{1}", v.Date.Month, v.Date.Day), Time = (v.Minutes / 60.0) });
-        //                        }
-        //                }
-        //        }
-        //}
+		//// Class for storing activities
+		///// <summary>
+		///// Class ChartData
+		///// </summary>
+		//public class ChartData : List<TimeChartInfo>
+		//{
+		//        /// <summary>
+		//        /// Initializes a new instance of the <see cref="ChartData" /> class.
+		//        /// </summary>
+		//        public ChartData()
+		//        {
+		//                if (((TimeReportViewModel)DataContext).icReport.Count > 1) {
+		//                        foreach (TimeReportSummaryModel v in App.ViewModel.icReport) {
+		//                                Add(new TimeChartInfo { Header = new String(v.Month.Take(3).ToArray()), Time = (v.Minutes / 60.0) });
+		//                        }
+		//                } else {
+		//                        foreach (TimeReportEntryViewModel v in App.ViewModel.lbTimeEntries) {
+		//                                Add(new TimeChartInfo { Header = string.Format("{0}/{1}", v.Date.Month, v.Date.Day), Time = (v.Minutes / 60.0) });
+		//                        }
+		//                }
+		//        }
+		//}
 
 	/// <summary>
 	/// Class TimeChartInfo

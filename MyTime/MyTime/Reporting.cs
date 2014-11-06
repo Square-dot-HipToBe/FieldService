@@ -24,11 +24,11 @@ namespace FieldService
 			string sendTo = String.Empty;
 			bool includeSig = true;
 			try {
-			    string nickName = App.Settings.nickname;
+				string nickName = App.Settings.nickname;
 				body += String.Format(",\n{0}", nickName);
-			    sendType = App.Settings.SendMethodEnum;
-			    sendTo = App.Settings.csoEmail;
-			    includeSig = App.Settings.shareFSApp;
+				sendType = App.Settings.SendMethodEnum;
+				sendTo = App.Settings.csoEmail;
+				includeSig = App.Settings.shareFSApp;
 			} catch (Exception) {}
 
 			if (sendType == addressType.Email) {
@@ -48,7 +48,7 @@ namespace FieldService
 			TimeData[] entries = TimeDataInterface.GetEntries(fromDate, toDate, so);
 
 			try {
-			    bool countCalls = App.Settings.manuallyTrackRvs;
+				bool countCalls = App.Settings.manuallyTrackRvs;
 
 				if (!countCalls) return entries;
 				RvPreviousVisitData[] calls = RvPreviousVisitsDataInterface.GetCallsByDate(fromDate, toDate);
@@ -65,7 +65,7 @@ namespace FieldService
 							e.Magazines += c.Magazines;
 							e.Books += c.Books;
 							e.Brochures += c.Brochures;
-						        e.Tracts += c.Tracts;
+							e.Tracts += c.Tracts;
 							e.ReturnVisits += RvPreviousVisitsDataInterface.IsInitialCall(c) ? 0 : 1;
 							found = true;
 							break;
@@ -77,7 +77,7 @@ namespace FieldService
 												Magazines = c.Magazines,
 												Books = c.Books,
 												Brochures = c.Brochures,
-                                                                                                Tracts = c.Tracts,
+																								Tracts = c.Tracts,
 												Date = c.Date,
 												ReturnVisits = RvPreviousVisitsDataInterface.IsInitialCall(c) ? 0 : 1
 											});
