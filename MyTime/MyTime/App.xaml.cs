@@ -57,12 +57,12 @@ namespace FieldService
 		/// </summary>
 		public App()
 		{
-            // Ensure the current culture passed into bindings 
-            // is the OS culture. By default, WPF uses en-US 
-            // as the culture, regardless of the system settings.
-            LocalizationManager.GlobalStringLoader = new TelerikStringLoader();
-		    Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentUICulture;
-		    Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentUICulture;
+			// Ensure the current culture passed into bindings 
+			// is the OS culture. By default, WPF uses en-US 
+			// as the culture, regardless of the system settings.
+			LocalizationManager.GlobalStringLoader = new TelerikStringLoader();
+			Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentUICulture;
+			Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentUICulture;
 
 			var radDiagnostics = new RadDiagnostics();
 			radDiagnostics.EmailTo = "help@square-hiptobe.com";
@@ -101,9 +101,9 @@ namespace FieldService
 			ReturnVisitsInterface.CheckDatabase();
 			RvPreviousVisitsDataInterface.CheckDatabase();
 			RBCTimeDataInterface.CheckDatabase();
-		    TerritoryCardsInterface.CheckDatabase();
-            StreetBuildingInterface.CheckDatabase();
-            House2HouseRecordsInterface.CheckDatabase();
+			TerritoryCardsInterface.CheckDatabase();
+			StreetBuildingInterface.CheckDatabase();
+			House2HouseRecordsInterface.CheckDatabase();
 		}
 
 		/// <summary>
@@ -112,7 +112,7 @@ namespace FieldService
 		/// <value>The app settings.</value>
 		public static SettingsProvider AppSettingsProvider { get { return _settingsProvider ?? new SettingsProvider(); } }
 
-        public static SettingsViewModel Settings { get { return _settingsViewModel ?? new SettingsViewModel(); } }
+		public static SettingsViewModel Settings { get { return _settingsViewModel ?? new SettingsViewModel(); } }
 
 		/// <summary>
 		/// A static ViewModel used by the views to bind against.
@@ -215,9 +215,9 @@ namespace FieldService
 		/// </summary>
 		private bool _phoneApplicationInitialized;
 
-	    private static SettingsViewModel _settingsViewModel;
+		private static SettingsViewModel _settingsViewModel;
 
-	    // Do not add any additional code to this method
+		// Do not add any additional code to this method
 
 		// Do not add any additional code to this method
 
@@ -283,19 +283,19 @@ namespace FieldService
 		/// <param name="title">The title.</param>
 		public static void ToastMe(string content, string title = "")
 		{
-            if(string.IsNullOrEmpty(title))
-                title = StringResources.ApplicationName;
+			if(string.IsNullOrEmpty(title))
+				title = StringResources.ApplicationName;
 
 
-            var toast = new ToastPrompt {
-                Title = title,
-                Message = content,
-                TextOrientation = Orientation.Vertical
-            };
+			var toast = new ToastPrompt {
+				Title = title,
+				Message = content,
+				TextOrientation = Orientation.Vertical
+			};
 
-            toast.Show();
-            
-            
+			toast.Show();
+			
+			
 		}
 
 		/// <summary>

@@ -164,10 +164,10 @@
 			</phone:PanoramaItem>
 			<phone:PanoramaItem x:Name="piHeaderDT" >
 				<phone:PanoramaItem.Header>
-					<StackPanel Orientation="Horizontal">
-						<TextBlock Text="{Binding StringResources.MainPage_Presentations_Headline, Source={StaticResource LocalizedStrings}}"/>
-						<telerikPrimitives:RadImageButton Tap="TakePresentationPicButton_Tap" RestStateImageSource="/icons/camera.png" Margin="-10,15,-10,0" />
-						<telerikPrimitives:RadImageButton Tap="DeletePresentationPic_Tap" RestStateImageSource="/icons/Garbage.png" Margin="-10,15,-5,0" />
+					<StackPanel Margin="-10,0,0,0" Width="470" Orientation="Horizontal">
+						<TextBlock Margin="0" Text="{Binding StringResources.MainPage_Presentations_Headline, Source={StaticResource LocalizedStrings}}"/>
+						<telerikPrimitives:RadImageButton MinHeight="40" MinWidth="40"  ImageStretch="Fill" ButtonShape="Ellipse" Tap="TakePresentationPicButton_Tap" RestStateImageSource="/icons/camera.png" Margin="-10,24,-10,0" />
+						<telerikPrimitives:RadImageButton MinHeight="40" MinWidth="40"  ImageStretch="Fill" ButtonShape="Ellipse" Tap="DeletePresentationPic_Tap" RestStateImageSource="/icons/Garbage.png" Margin="-10,24,-5,0" />
 					</StackPanel>
 				</phone:PanoramaItem.Header>
 				<Grid x:Name="gMainContent" Background="Transparent" Margin="0,-30,0,0">

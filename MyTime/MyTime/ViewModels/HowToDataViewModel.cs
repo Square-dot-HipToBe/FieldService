@@ -16,13 +16,8 @@ namespace FieldService.ViewModels
                     this._items = new ObservableCollection<HowToDataItemViewModel>();
                     _items.Add(new HowToDataItemViewModel() {
                         Title = StringResources.HowTo_WhatsNew,
-                        Information = StringResources.HowTo_WhatsNew_Goal_1,
-                        ImageSource = new Uri("/Images/whatsnew_goal_1.png", UriKind.Relative)
-                    });
-                    _items.Add(new HowToDataItemViewModel() {
-                        Title = StringResources.HowTo_WhatsNew,
-                        Information = StringResources.HowTo_WhatsNew_Goal_2,
-                        ImageSource = new Uri("/Images/whatsnew_goal_2.png", UriKind.Relative)
+                        Information = StringResources.WhatsNew_Presentations1,
+                        ImageSource = new Uri("/Images/whatsnew-presentations.png", UriKind.Relative)
                     });
                     _items.Add(new HowToDataItemViewModel() {
                         Title = StringResources.HowTo_WhatsNext_T1,
