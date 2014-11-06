@@ -367,7 +367,7 @@
 		<value>You must be connected to the internet to view.</value>
 	</data>
 	<data name="MainPage_Presentations_Headline" xml:space="preserve">
-		<value>presentation</value>
+		<value>presentations</value>
 	</data>
 	<data name="MainPage_MainMenu_AddAuxTime" xml:space="preserve">
 		<value>add auxiliary time</value>
@@ -930,14 +930,6 @@ Physical Description: {11}
 	<data name="HowTo_WhatsNew" xml:space="preserve">
 		<value>What's New?</value>
 	</data>
-	<data name="HowTo_WhatsNew_Goal_1" xml:space="preserve">
-		<value>Your report now shows a gauge with your goal (in hours) and your actual number of hours worked. 
-
-	This guage will automatically track whether you are viewing one month or multiple months and then adjust the goal accordingly.</value>
-	</data>
-	<data name="HowTo_WhatsNew_Goal_2" xml:space="preserve">
-		<value>Set your monthly goal in settings &gt; monthly goal.</value>
-	</data>
 	<data name="FullRVListPage_NoVisitsSaved" xml:space="preserve">
 		<value>No Previous Visits!</value>
 	</data>
@@ -1038,5 +1030,11 @@ Thanks</value>
 	</data>
 	<data name="Sharing_Subject" xml:space="preserve">
 		<value>Field Service Report</value>
+	</data>
+	<data name="WhatsNew_Presentations1" xml:space="preserve">
+		<value>To comply with the new jw.org terms of service we can no longer pull the daily text from jw.org</value>
+	</data>
+	<data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
+		<value>Would you like to include details regarding your auxiliary hours in your report?</value>
 	</data>
 </root>

@@ -1034,14 +1034,6 @@ kiitos</value>
 	<data name="Sharing_Subject" xml:space="preserve">
 		<value>Kenttä ministeriön raportti</value>
 	</data>
-	<data name="HowTo_WhatsNew_Goal_1" xml:space="preserve">
-		<value>Sinun raportti näyttää nyt mittari teidän tavoite (tunteina) ja todellisen työtuntien määrä. 
-
-Tämä mittari seuraa automaattisesti siitä katselet kuukausi tai useita kuukausia ja säädä maalin vastaavasti. </value>
-	</data>
-	<data name="HowTo_WhatsNew_Goal_2" xml:space="preserve">
-		<value>Aseta kuukausittain tavoite asetukset &gt; kuukausittain tavoite.</value>
-	</data>
 	<data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
 		<value> viikkoa vuodesta vierailu</value>
 	</data>
@@ -1050,5 +1042,11 @@ Tämä mittari seuraa automaattisesti siitä katselet kuukausi tai useita kuukau
 	</data>
 	<data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
 		<value> vuotta (s) jälkeen vierailu</value>
+	</data>
+	<data name="WhatsNew_Presentations1" xml:space="preserve">
+		<value>Noudattamaan uusia jw.org käyttöehdot emme voi enää vetää päivittäin tekstiä jw.org. Se on korvattu esityksiä kuva.</value>
+	</data>
+	<data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
+		<value>Haluatko olla tiedot teidän ylimääräisiä tunteja raporttiin?</value>
 	</data>
 </root>

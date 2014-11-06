@@ -862,26 +862,6 @@ namespace FieldService {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your report now shows a gauge with your goal (in hours) and your actual number of hours worked. 
-        ///
-        ///	This guage will automatically track whether you are viewing one month or multiple months and then adjust the goal accordingly..
-        /// </summary>
-        public static string HowTo_WhatsNew_Goal_1 {
-            get {
-                return ResourceManager.GetString("HowTo_WhatsNew_Goal_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Set your monthly goal in settings &gt; monthly goal..
-        /// </summary>
-        public static string HowTo_WhatsNew_Goal_2 {
-            get {
-                return ResourceManager.GetString("HowTo_WhatsNew_Goal_2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 1.  House-to-House Record Tracking.
         ///2.  Record &quot;not at home&quot; visit for a return visit..
         /// </summary>
@@ -1063,7 +1043,7 @@ namespace FieldService {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to presentation.
+        ///   Looks up a localized string similar to presentations.
         /// </summary>
         public static string MainPage_Presentations_Headline {
             get {
@@ -1248,6 +1228,15 @@ namespace FieldService {
         public static string MainPage_Time_Tracts {
             get {
                 return ResourceManager.GetString("MainPage_Time_Tracts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Would you like to include details regarding your auxiliary hours in your report?.
+        /// </summary>
+        public static string Reporting_IncludeAuxiliaryDetail {
+            get {
+                return ResourceManager.GetString("Reporting_IncludeAuxiliaryDetail", resourceCulture);
             }
         }
         
@@ -2742,6 +2731,15 @@ namespace FieldService {
         public static string ViewPreviousVisitPage_Tracts {
             get {
                 return ResourceManager.GetString("ViewPreviousVisitPage_Tracts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To comply with the new jw.org terms of service we can no longer pull the daily text from jw.org.
+        /// </summary>
+        public static string WhatsNew_Presentations1 {
+            get {
+                return ResourceManager.GetString("WhatsNew_Presentations1", resourceCulture);
             }
         }
     }

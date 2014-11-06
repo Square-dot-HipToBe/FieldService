@@ -1021,13 +1021,6 @@ Köszönöm</value>
 	<data name="Sharing_Subject" xml:space="preserve">
 		<value>Szántőföldi Szolgálati Jelentés</value>
 	</data>
-	<data name="HowTo_WhatsNew_Goal_1" xml:space="preserve">
-		<value>A jelentést megjeleníti a mérőeszközt a cél (óra), és a tényleges munkaórák számát. 
-Ez a nyomtáv automatikusan követni Ha akár egy hónap, vagy több hónapig, majd állítsa be a cél kell. </value>
-	</data>
-	<data name="HowTo_WhatsNew_Goal_2" xml:space="preserve">
-		<value>Állítsa be a havi cél Beállítások &gt; havi cél.</value>
-	</data>
 	<data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
 		<value> hét óta látogatás</value>
 	</data>
@@ -1036,5 +1029,11 @@ Ez a nyomtáv automatikusan követni Ha akár egy hónap, vagy több hónapig, m
 	</data>
 	<data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
 		<value> év(ek) óta látogatás</value>
+	</data>
+	<data name="WhatsNew_Presentations1" xml:space="preserve">
+		<value>Ahhoz, hogy az új jw.org szolgáltatási feltételeket többé már nem húzza ki a napi szöveget jw.org. Ez váltotta fel az előadások kép.</value>
+	</data>
+	<data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
+		<value>Szeretné tartalmazza adatait, a kiegészítő órát a jelentésben?</value>
 	</data>
 </root>

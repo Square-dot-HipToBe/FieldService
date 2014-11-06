@@ -1018,14 +1018,6 @@ dank</value>
 	<data name="Sharing_Subject" xml:space="preserve">
 		<value>Feld Ministerium Bericht</value>
 	</data>
-	<data name="HowTo_WhatsNew_Goal_1" xml:space="preserve">
-		<value>Ihr Bericht zeigt nun ein Messgerät mit Ihrem Ziel (in Stunden) und der tatsächlichen Zahl der geleisteten Arbeitsstunden. 
-
-Dieser che automatisch verfolgen, ob Sie sehen gerade ein Monat oder mehrere Monate und dann entsprechend anpassen das Ziel. </value>
-	</data>
-	<data name="HowTo_WhatsNew_Goal_2" xml:space="preserve">
-		<value>Stellen Sie Ihre monatlichen Ziel in den Einstellungen &gt; Monats Ziel.</value>
-	</data>
 	<data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
 		<value> Wochen seit Besuch</value>
 	</data>
@@ -1034,5 +1026,11 @@ Dieser che automatisch verfolgen, ob Sie sehen gerade ein Monat oder mehrere Mon
 	</data>
 	<data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
 		<value> Jahr (en), da Besuch</value>
+	</data>
+	<data name="WhatsNew_Presentations1" xml:space="preserve">
+		<value>Um mit den neuen jw.org Nutzungsbedingungen entsprechen, können wir die täglichen Text aus jw.org nicht mehr zu ziehen. Es hat mit der Präsentation Bild ersetzt.</value>
+	</data>
+  <data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
+		<value>Möchten Sie alle Angaben Ihrer Hilfs Stunden in den Bericht aufgenommen werden?</value>
 	</data>
 </root>
