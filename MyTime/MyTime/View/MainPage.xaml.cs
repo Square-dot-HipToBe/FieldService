@@ -580,7 +580,7 @@ namespace FieldService.View
                     Reporting.SendReport(body);
                     return;
                 }
-                body += "-------------------\n";
+                body += "\n\n-------------------\n";
                 body += string.Format(StringResources.MainPage_Report_AuxHours, string.Empty);
                 foreach (var r in rbcList)
                 {

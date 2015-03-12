@@ -127,7 +127,7 @@ namespace FieldService.View
 										Reporting.SendReport(body);
 										return;
 									}
-									body += "-------------------\n";
+									body += "\n\n-------------------\n";
 									body += string.Format(StringResources.MainPage_Report_AuxHours, string.Empty);
 									foreach (var r in rbcList) {
 										body += string.Format("{0}/{1} - ({2} {3}): {4}\n", r.Date.Month, r.Date.Day, r.Hours, StringResources.TelerikRadDatePicker_TimeSpanHour, r.Notes);
