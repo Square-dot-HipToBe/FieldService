@@ -14,11 +14,11 @@ namespace FieldService.ViewModels
                 private void InitializeItems()
                 {
                     this._items = new ObservableCollection<HowToDataItemViewModel>();
-                    _items.Add(new HowToDataItemViewModel() {
-                        Title = StringResources.HowTo_WhatsNew,
-                        Information = StringResources.WhatsNew_Presentations1,
-                        ImageSource = new Uri("/Images/whatsnew-presentations.png", UriKind.Relative)
-                    });
+                    //_items.Add(new HowToDataItemViewModel() {
+                    //    Title = StringResources.HowTo_WhatsNew,
+                    //    Information = StringResources.WhatsNew_Presentations1,
+                    //    ImageSource = new Uri("/Images/whatsnew-presentations.png", UriKind.Relative)
+                    //});
                     _items.Add(new HowToDataItemViewModel() {
                         Title = StringResources.HowTo_WhatsNext_T1,
                         Information = StringResources.HowTo_WhatsNext_I1
