@@ -186,7 +186,7 @@
                                         <TextBlock Text="{Binding Notes}" Height="50" TextWrapping="Wrap" TextTrimming="WordEllipsis" Style="{StaticResource PhoneTextSmallStyle}" />
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding DaysSinceVisit}" Style="{StaticResource PhoneTextAccentStyle}" />
-                                            <TextBlock Text="{Binding StringResources.RVPage_Visits_DaysSince, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextAccentStyle}" />
+                                            <TextBlock Text="{Binding Path=StringResources.RVPage_Visits_DaysSinceDays, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextAccentStyle}" />
                                         </StackPanel>
                                     </StackPanel>
                                 </DataTemplate>
