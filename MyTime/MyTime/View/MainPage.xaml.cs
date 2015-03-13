@@ -163,18 +163,18 @@ namespace FieldService.View
 
             try {
                 //MessageBox.Show(CultureInfo.CurrentCulture.Name);
-                if (App.Settings.askForDonation) {
+                //if (App.Settings.askForDonation) {
 
-                    if (MessageBox.Show(StringResources.MainPage_Messages_DonatePlease, "", MessageBoxButton.OKCancel) == MessageBoxResult.OK) {
-                        var donate = new WebBrowserTask() {
-                            URL = @"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=tk%40square%2dhiptobe%2ecom&lc=US&item_name=Field%20Service%20App%20%28Square%2eHipToBe%29&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest"
-                        };
-                        donate.Show();
-                    } else {
-                        App.ToastMe(StringResources.MainPage_Messages_DonateLater);
-                    }
-                    App.Settings.askForDonation = false;
-                }
+                //    if (MessageBox.Show(StringResources.MainPage_Messages_DonatePlease, "", MessageBoxButton.OKCancel) == MessageBoxResult.OK) {
+                //        var donate = new WebBrowserTask() {
+                //            URL = @"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=tk%40square%2dhiptobe%2ecom&lc=US&item_name=Field%20Service%20App%20%28Square%2eHipToBe%29&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest"
+                //        };
+                //        donate.Show();
+                //    } else {
+                //        App.ToastMe(StringResources.MainPage_Messages_DonateLater);
+                //    }
+                //    App.Settings.askForDonation = false;
+                //}
                 using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
                 using (var isoFileStream = isoStore.OpenFile("Presentation.jpg", FileMode.Open, FileAccess.Read)) {
                     var bi = new BitmapImage();
@@ -580,7 +580,7 @@ namespace FieldService.View
                     Reporting.SendReport(body);
                     return;
                 }
-                body += "-------------------\n";
+                body += "\n\n-------------------\n";
                 body += string.Format(StringResources.MainPage_Report_AuxHours, string.Empty);
                 foreach (var r in rbcList)
                 {
