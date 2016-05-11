@@ -98,10 +98,10 @@
                                             <TextBlock Width="Auto" TextWrapping="Wrap">
                                                 <Run Text="{Binding Magazines}" />
                                                 <Run Text="{Binding Path=StringResources.ReportingPage_Report_Magazines, Source={StaticResource LocalizedStrings}}" />
-                                                <Run Text="{Binding Books}" />
-                                                <Run Text="{Binding Path=StringResources.ReportingPage_Report_Books, Source={StaticResource LocalizedStrings}}" />
                                                 <Run Text="{Binding Brochures}" />
                                                 <Run Text="{Binding Path=StringResources.ReportingPage_Report_Brochures, Source={StaticResource LocalizedStrings}}" />
+                                                <Run Text="{Binding Books}" />
+                                                <Run Text="{Binding Path=StringResources.ReportingPage_Report_Books, Source={StaticResource LocalizedStrings}}" />
                                                 <Run Text="{Binding Tracts, FallbackValue=0}" />
                                                 <Run Text="{Binding Path=StringResources.ReportingPage_Report_Tracts, Source={StaticResource LocalizedStrings}}" />
                                                 <Run Text="{Binding Videos, FallbackValue=0}" />
