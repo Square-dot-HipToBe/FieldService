@@ -57,11 +57,13 @@ namespace MyTimeDatabaseLib.Model
         /// <summary>
         /// The _version
         /// </summary>
-        [Column(IsVersion = true)] private Binary _version;
+        [Column(IsVersion = true)]
+        private Binary _version;
 
-            private int? _tracts;
+        private int? _tracts;
+        private int? _videos;
 
-            /// <summary>
+        /// <summary>
         /// Gets or sets the item id.
         /// </summary>
         /// <value>The item id.</value>
@@ -71,7 +73,8 @@ namespace MyTimeDatabaseLib.Model
             get { return _itemId; }
             set
             {
-                if (_itemId != value) {
+                if (_itemId != value)
+                {
                     NotifyPropertyChanging("ItemId");
                     _itemId = value;
                     NotifyPropertyChanged("ItemId");
@@ -91,7 +94,8 @@ namespace MyTimeDatabaseLib.Model
             get { return _date; }
             set
             {
-                if (_date != value) {
+                if (_date != value)
+                {
                     NotifyPropertyChanging("Date");
                     _date = value;
                     NotifyPropertyChanged("Date");
@@ -111,7 +115,8 @@ namespace MyTimeDatabaseLib.Model
             get { return _rvItemId; }
             set
             {
-                if (_rvItemId != value) {
+                if (_rvItemId != value)
+                {
                     NotifyPropertyChanging("RvItemId");
                     _rvItemId = value;
                     NotifyPropertyChanged("RvItemId");
@@ -130,7 +135,8 @@ namespace MyTimeDatabaseLib.Model
 
             set
             {
-                if (_mags != value) {
+                if (_mags != value)
+                {
                     NotifyPropertyChanging("Magazines");
                     _mags = value;
                     NotifyPropertyChanged("Magazines");
@@ -149,7 +155,8 @@ namespace MyTimeDatabaseLib.Model
 
             set
             {
-                if (_books != value) {
+                if (_books != value)
+                {
                     NotifyPropertyChanging("Books");
                     _books = value;
                     NotifyPropertyChanged("Books");
@@ -168,7 +175,8 @@ namespace MyTimeDatabaseLib.Model
 
             set
             {
-                if (_brochures != value) {
+                if (_brochures != value)
+                {
                     NotifyPropertyChanging("Brochures");
                     _brochures = value;
                     NotifyPropertyChanged("Brochures");
@@ -186,7 +194,8 @@ namespace MyTimeDatabaseLib.Model
             get { return _notes; }
             set
             {
-                if (_notes != value) {
+                if (_notes != value)
+                {
                     NotifyPropertyChanging("Notes");
                     _notes = value;
                     NotifyPropertyChanged("Notes");
@@ -194,24 +203,39 @@ namespace MyTimeDatabaseLib.Model
             }
         }
 
-            [Column(CanBeNull = true)]
-            public int? Tracts
+        [Column(CanBeNull = true)]
+        public int? Videos
+        {
+            get { return _videos; }
+            set
             {
-                    get { return _tracts ?? 0; }
-                    set
-                    {
-                            if (_tracts != value)
-                            {
-                                    NotifyPropertyChanging("Tracts");
-                                    _tracts = value;
-                                    NotifyPropertyChanged("Tracts");
-                            }
-                    }
+                if (_videos != value)
+                {
+                    NotifyPropertyChanging("Videos");
+                    _videos = value;
+                    NotifyPropertyChanged("Videos");
+                }
             }
+        }
 
-            // Version column aids update performance.
+        [Column(CanBeNull = true)]
+        public int? Tracts
+        {
+            get { return _tracts ?? 0; }
+            set
+            {
+                if (_tracts != value)
+                {
+                    NotifyPropertyChanging("Tracts");
+                    _tracts = value;
+                    NotifyPropertyChanged("Tracts");
+                }
+            }
+        }
 
-            #region INotifyPropertyChanged Members
+        // Version column aids update performance.
+
+        #region INotifyPropertyChanged Members
 
         /// <summary>
         /// Occurs when [property changed].
@@ -237,7 +261,8 @@ namespace MyTimeDatabaseLib.Model
         /// <param name="propertyName">Name of the property.</param>
         private void NotifyPropertyChanged(string propertyName)
         {
-            if (PropertyChanged != null) {
+            if (PropertyChanged != null)
+            {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
@@ -249,7 +274,8 @@ namespace MyTimeDatabaseLib.Model
         /// <param name="propertyName">Name of the property.</param>
         private void NotifyPropertyChanging(string propertyName)
         {
-            if (PropertyChanging != null) {
+            if (PropertyChanging != null)
+            {
                 PropertyChanging(this, new PropertyChangingEventArgs(propertyName));
             }
         }

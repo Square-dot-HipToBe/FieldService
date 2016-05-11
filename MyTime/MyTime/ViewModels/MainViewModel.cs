@@ -147,6 +147,12 @@ namespace FieldService.ViewModels
 			set { SetMainPageDouble(value, "tracts"); }
 		}
 
+	    public double MainPageVideos
+	    {
+            get { return GetMainPageDouble("videos"); }
+            set { SetMainPageDouble(value, "videos");}
+	    }
+
 		public double MainPageReturnVisits
 		{
 			get { return GetMainPageDouble("rvs"); }

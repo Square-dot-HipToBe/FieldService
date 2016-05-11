@@ -100,18 +100,13 @@ namespace FieldService.View
 						foreach (TimeReportSummaryModel entry in ((TimeReportViewModel)DataContext).icReport) {
 				body += string.Format(StringResources.Reporting_ReportHeader, entry.Month);
 								body += string.Format(StringResources.MainPage_Report_Hours, (entry.Minutes/60.0));
-								body += entry.Magazines > 0
-										? string.Format(StringResources.MainPage_Report_Mags, entry.Magazines)
+								body += entry.Placements > 0
+										? string.Format(StringResources.MainPage_Report_Placements, entry.Placements)
 										: string.Empty;
-								body += entry.Books > 0
-										? string.Format(StringResources.MainPage_Report_Books, entry.Books)
+								body += entry.Videos > 0
+										? string.Format(StringResources.MainPage_Report_Videos, entry.Videos)
 										: string.Empty;
-								body += entry.Brochures > 0
-										? string.Format(StringResources.MainPage_Report_Brochures, entry.Brochures)
-										: string.Empty;
-								body += entry.Tracts > 0
-										? string.Format(StringResources.MainPage_Report_Tracts, entry.Tracts)
-										: string.Empty;
+								
 								body += entry.ReturnVisits > 0
 										? string.Format(StringResources.MainPage_Report_RVs, entry.ReturnVisits)
 										: string.Empty;

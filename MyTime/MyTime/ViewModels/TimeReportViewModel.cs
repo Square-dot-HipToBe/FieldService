@@ -163,6 +163,8 @@ namespace FieldService.ViewModels
                 summary.Brochures += td.Brochures;
                 summary.ReturnVisits += td.ReturnVisits;
                 summary.Tracts += td.Tracts;
+                summary.Videos += td.Videos;
+                summary.Placements += td.Placements;
                 //summary data end.
 
                 //add the time data to the entries page.
@@ -177,6 +179,8 @@ namespace FieldService.ViewModels
                     BrochuresCount = td.Brochures,
                     BooksCount = td.Books,
                     TractsCount = td.Tracts,
+                    VideosCount = td.Videos,
+                    PlacementsCount = td.Placements,
                     RVsCount = td.ReturnVisits,
                     Type = TimeType.Regular
                 });
@@ -204,6 +208,8 @@ namespace FieldService.ViewModels
                     BooksCount = -1,
                     RVsCount = -1,
                     TractsCount = -1,
+                    PlacementsCount = -1,
+                    VideosCount = -1,
                     Type = TimeType.Auxiliary
                 });
             }
