@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HtmlAgilityPack;
 
 namespace FieldService.SocietyScraper
 {
@@ -19,23 +18,23 @@ namespace FieldService.SocietyScraper
                         if (handler != null) handler(text);
                 }
 
-                private HtmlWeb _hw;
+                //private HtmlWeb _hw;
 
                 public void StartPresentationTextRetrieval(string url)
                 {
-                        _hw = new HtmlWeb();
+                    //    _hw = new HtmlWeb();
                         
-                    _hw.LoadCompleted += hw_LoadCompleted;
-                    _hw.LoadAsync(url);
+                    //_hw.LoadCompleted += hw_LoadCompleted;
+                    //_hw.LoadAsync(url);
                 }
 
-                private void hw_LoadCompleted(object sender, HtmlDocumentLoadCompleted e)
-                {
-                        if (e.Document != null) {
-                                var txt = e.Document;
+                //private void hw_LoadCompleted(object sender, HtmlDocumentLoadCompleted e)
+                //{
+                //        if (e.Document != null) {
+                //                var txt = e.Document;
 
-                                OnTextRetrieved(txt.DocumentNode.InnerText.Replace("\\n","\n").Replace("&nbsp;"," ").Replace("&quot;","\""));
-                        }
-                }
+                //                OnTextRetrieved(txt.DocumentNode.InnerText.Replace("\\n","\n").Replace("&nbsp;"," ").Replace("&quot;","\""));
+                //        }
+                //}
         }
 }

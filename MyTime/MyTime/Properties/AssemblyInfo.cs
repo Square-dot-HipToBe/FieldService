@@ -6,7 +6,7 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Field Service")]
+[assembly: AssemblyTitle("JW Field Service")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Square.HipToBe")]
@@ -33,6 +33,6 @@ using System.Resources;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("2015.03.13.1615")]
-[assembly: AssemblyFileVersion("1.15.03.13")]
+[assembly: AssemblyVersion("2016.05.11.2321")]
+[assembly: AssemblyFileVersion("1.6.05.11")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]

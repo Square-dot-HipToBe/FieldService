@@ -1,687 +1,687 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema 
-		
-		Version 2.0
-		
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-		
-		Example:
-		
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">2.0</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-				<value>[base64 mime encoded serialized .NET Framework object]</value>
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-				<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-				<comment>This is a comment</comment>
-		</data>
-								
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-		
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-		
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-		
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-		
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-						: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-						: and then encoded with base64 encoding.
-		
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-						: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-						: and then encoded with base64 encoding.
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-						: using a System.ComponentModel.TypeConverter
-						: and then encoded with base64 encoding.
-		-->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="AddCallPage_Books" xml:space="preserve">
-		<value>Books</value>
-	</data>
-	<data name="AddCallPage_Brochures" xml:space="preserve">
-		<value>Brochures</value>
-	</data>
-	<data name="AddCallPage_CallSaved" xml:space="preserve">
-		<value>Call Saved.</value>
-	</data>
-	<data name="AddCallPage_CallSavedFailed" xml:space="preserve">
-		<value>Call Saving Failed.</value>
-	</data>
-	<data name="AddCallPage_Date" xml:space="preserve">
-		<value>DATE</value>
-	</data>
-	<data name="AddCallPage_DeleteCall" xml:space="preserve">
-		<value>delete call</value>
-	</data>
-	<data name="AddCallPage_DeleteCallConfirmation" xml:space="preserve">
-		<value>Are you sure you want to delete this call?</value>
-	</data>
-	<data name="AddCallPage_DeleteCallFailed" xml:space="preserve">
-		<value>Deleting the call failed.</value>
-	</data>
-	<data name="AddCallPage_Headline" xml:space="preserve">
-		<value>call</value>
-	</data>
-	<data name="AddCallPage_Magazines" xml:space="preserve">
-		<value>Magazines</value>
-	</data>
-	<data name="AddCallPage_Notes" xml:space="preserve">
-		<value>NOTES</value>
-	</data>
-	<data name="AddCallPage_Placements" xml:space="preserve">
-		<value>PLACEMENTS</value>
-	</data>
-	<data name="AddCallPage_Save" xml:space="preserve">
-		<value>save</value>
-	</data>
-	<data name="AddCallPage_SaveBeforeEditMessage" xml:space="preserve">
-		<value>You must save the RV before adding a call.</value>
-	</data>
-	<data name="AddRBCTimePage_AskForDoubleEntry" xml:space="preserve">
-		<value>It appears you have already added time earlier today.  Would you like to merge this new time with the previous time for today?</value>
-	</data>
-	<data name="AddRBCTimePage_Confirmation" xml:space="preserve">
-		<value>Auxiliary Hour(s) Saved.</value>
-	</data>
-	<data name="AddRBCTimePage_ConvertMenuItem" xml:space="preserve">
-		<value>convert to time</value>
-	</data>
-	<data name="AddRBCTimePage_Date" xml:space="preserve">
-		<value>DATE</value>
-	</data>
-	<data name="AddRBCTimePage_Delete" xml:space="preserve">
-		<value>delete</value>
-	</data>
-	<data name="AddRBCTimePage_DeleteConfirmation" xml:space="preserve">
-		<value>Auxiliary Time Deleted.</value>
-	</data>
-	<data name="AddRBCTimePage_DeleteFailed" xml:space="preserve">
-		<value>Deleting Failed.</value>
-	</data>
-	<data name="AddRBCTimePage_Headline" xml:space="preserve">
-		<value>auxiliary time</value>
-	</data>
-	<data name="AddRBCTimePage_Note" xml:space="preserve">
-		<value>Auxiliary time is any type of time that is not field service related, but that can be reported on your field service report - e.g. for some appointed brothers &amp; sisters time spent at regional building committee sites building kingdom halls can be noted on their report.  Please see your congregation service overseer for details.</value>
-	</data>
-	<data name="AddRBCTimePage_Notes" xml:space="preserve">
-		<value>NOTES</value>
-	</data>
-	<data name="AddRBCTimePage_Save" xml:space="preserve">
-		<value>save</value>
-	</data>
-	<data name="AddRBCTimePage_SaveConfirmation" xml:space="preserve">
-		<value>Time: {0} Hours Saved.</value>
-	</data>
-	<data name="AddRBCTimePage_SaveFailed" xml:space="preserve">
-		<value>Save Failed.</value>
-	</data>
-	<data name="AddRBCTimePage_Time" xml:space="preserve">
-		<value>TIME</value>
-	</data>
-	<data name="AddTimePage_Books" xml:space="preserve">
-		<value>Books</value>
-	</data>
-	<data name="AddTimePage_Brochures" xml:space="preserve">
-		<value>Brochures</value>
-	</data>
-	<data name="AddTimePage_ConvertMenuItem" xml:space="preserve">
-		<value>convert to rbc time</value>
-	</data>
-	<data name="AddTimePage_Date" xml:space="preserve">
-		<value>DATE</value>
-	</data>
-	<data name="AddTimePage_DeleteMenuItem" xml:space="preserve">
-		<value>delete</value>
-	</data>
-	<data name="AddTimePage_Headline" xml:space="preserve">
-		<value>time</value>
-	</data>
-	<data name="AddTimePage_Magazines" xml:space="preserve">
-		<value>Magazines</value>
-	</data>
-	<data name="AddTimePage_Messages_RBCConvertFailed" xml:space="preserve">
-		<value>Conversion Failed.</value>
-	</data>
-	<data name="AddTimePage_Messages_RBCConvertSuccess" xml:space="preserve">
-		<value>Time Converted to RBC.</value>
-	</data>
-	<data name="AddTimePage_Messages_SaveCompleted" xml:space="preserve">
-		<value>Time: {0} Hours Saved.</value>
-	</data>
-	<data name="AddTimePage_Messages_SaveFailed" xml:space="preserve">
-		<value>Failed to Save Time.</value>
-	</data>
-	<data name="AddTimePage_Messages_TimeDeleteFailed" xml:space="preserve">
-		<value>Delete Failed.</value>
-	</data>
-	<data name="AddTimePage_Messages_TimeDeleteSuccess" xml:space="preserve">
-		<value>Time Deleted.</value>
-	</data>
-	<data name="AddTimePage_Notes" xml:space="preserve">
-		<value>NOTES</value>
-	</data>
-	<data name="AddTimePage_Placements" xml:space="preserve">
-		<value>PLACEMENTS</value>
-	</data>
-	<data name="AddTimePage_RVs" xml:space="preserve">
-		<value>Return Visits</value>
-	</data>
-	<data name="AddTimePage_Save" xml:space="preserve">
-		<value>save</value>
-	</data>
-	<data name="AddTimePage_Time" xml:space="preserve">
-		<value>TIME</value>
-	</data>
-	<data name="AddTime_BibleStudies" xml:space="preserve">
-		<value>Bible Studies</value>
-	</data>
-	<data name="ApplicationName" xml:space="preserve">
-		<value>FIELD SERVICE</value>
-	</data>
-	<data name="Application_DailyTextURL" xml:space="preserve">
-		<value>http://wol.jw.org/en/wol/dt/r1/lp-e/{0}/{1}/{2}</value>
-	</data>
-	<data name="BackupAndRestorePage_Backup" xml:space="preserve">
-		<value>Backup</value>
-	</data>
-	<data name="BackupAndRestorePage_Headline" xml:space="preserve">
-		<value>manage cloud</value>
-	</data>
-	<data name="BackupAndRestorePage_LastBackup" xml:space="preserve">
-		<value>Last Backup Date</value>
-	</data>
-	<data name="BackupAndRestorePage_Message" xml:space="preserve">
-		<value>Please sign-in and allow access to your SkyDrive.</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_DwnlProgress" xml:space="preserve">
-		<value>{0:0,0} of {1:0,0} downloaded.</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_NeverBackedUp" xml:space="preserve">
-		<value>Never Backed Up!</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_Progress" xml:space="preserve">
-		<value>{0:0,0} of {1:0,0} uploaded.</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_RestoreFailed" xml:space="preserve">
-		<value>Restore Failed!</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_RestoreSuccess" xml:space="preserve">
-		<value>Restore Completed!</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_Restoring" xml:space="preserve">
-		<value>Restoring Now...</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_SkyDriveListingFailed" xml:space="preserve">
-		<value>Skydrive Listing Failed.</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_UploadFailed" xml:space="preserve">
-		<value>Can't upload your backup data. Please log out and try again.</value>
-	</data>
-	<data name="BackupAndRestorePage_Messages_Welcome" xml:space="preserve">
-		<value>Welcome {0} {1}</value>
-	</data>
-	<data name="BackupAndRestorePage_NotSignedIn" xml:space="preserve">
-		<value>Not signed in.</value>
-	</data>
-	<data name="BackupAndRestorePage_Restore" xml:space="preserve">
-		<value>Restore</value>
-	</data>
-	<data name="BackupAndRestorePage_SignIn" xml:space="preserve">
-		<value>Sign in</value>
-	</data>
-	<data name="BackupAndRestorePage_Signout" xml:space="preserve">
-		<value>Sign out</value>
-	</data>
-	<data name="BackupAndRestorePage_Welcome" xml:space="preserve">
-		<value>Welcome</value>
-	</data>
-	<data name="CustomReportsPage_ErrorText" xml:space="preserve">
-		<value>You must choose a start &amp; end date.</value>
-	</data>
-	<data name="CustomReportsPage_Headline" xml:space="preserve">
-		<value>Custom Report</value>
-	</data>
-	<data name="CustomReportsPage_Month" xml:space="preserve">
-		<value>Month</value>
-	</data>
-	<data name="CustomReportsPage_Range" xml:space="preserve">
-		<value>RANGE</value>
-	</data>
-	<data name="CustomReportsPage_RunReport" xml:space="preserve">
-		<value>Run Report</value>
-	</data>
-	<data name="CustomReportsPage_Start" xml:space="preserve">
-		<value>START DATE</value>
-	</data>
-	<data name="CustomReportsPage_To" xml:space="preserve">
-		<value>END DATE</value>
-	</data>
-	<data name="CustomReportsPage_Week" xml:space="preserve">
-		<value>Week</value>
-	</data>
-	<data name="CustomReportsPage_Year" xml:space="preserve">
-		<value>Year</value>
-	</data>
-	<data name="CustomReportsPage_LastMonth" xml:space="preserve">
-		<value>last month</value>
-	</data>
-	<data name="CustomReportsPage_LastServiceYear" xml:space="preserve">
-		<value>last service year</value>
-	</data>
-	<data name="FullRVListPage_Headline" xml:space="preserve">
-		<value>return visits</value>
-	</data>
-	<data name="FullRVListPage_YearOld" xml:space="preserve">
-		<value>Year Old</value>
-	</data>
-	<data name="MainPage_AppName" xml:space="preserve">
-		<value>Field Service</value>
-	</data>
-	<data name="MainPage_DT_Copyright" xml:space="preserve">
-		<value>THE ABOVE IS COPYRIGHT 2014 WATCHTOWER BIBLE AND TRACT SOCIETY OF PENNSYLVANIA, INC. ALL RIGHTS RESERVED.</value>
-	</data>
-	<data name="MainPage_DT_ErrorText" xml:space="preserve">
-		<value>You must be connected to the internet to view.</value>
-	</data>
-	<data name="MainPage_Presentations_Headline" xml:space="preserve">
-		<value>presentations</value>
-	</data>
-	<data name="MainPage_MainMenu_AddAuxTime" xml:space="preserve">
-		<value>add auxiliary time</value>
-	</data>
-	<data name="MainPage_MainMenu_AddRv" xml:space="preserve">
-		<value>add return visit</value>
-	</data>
-	<data name="MainPage_MainMenu_AddTime" xml:space="preserve">
-		<value>add time</value>
-	</data>
-	<data name="MainPage_MainMenu_BackupRestore" xml:space="preserve">
-		<value>backup &amp; restore</value>
-	</data>
-	<data name="MainPage_MainMenu_CustomReport" xml:space="preserve">
-		<value>custom time report</value>
-	</data>
-	<data name="MainPage_MainMenu_MonthReport" xml:space="preserve">
-		<value>{0} report</value>
-	</data>
-	<data name="MainPage_MainMenu_SendReport" xml:space="preserve">
-		<value>send service report</value>
-	</data>
-	<data name="MainPage_MainMenu_ServiceYearReport" xml:space="preserve">
-		<value>service year report</value>
-	</data>
-	<data name="MainPage_MainMenu_Settings" xml:space="preserve">
-		<value>settings</value>
-	</data>
-	<data name="MainPage_MainMenu_WtLib" xml:space="preserve">
-		<value>watchtower library</value>
-	</data>
-	<data name="MainPage_Messages_AddedTime" xml:space="preserve">
-		<value>Time ({0} hrs &amp; {1} min) added.</value>
-	</data>
-	<data name="MainPage_Messages_CantAddZeroMin" xml:space="preserve">
-		<value>You can't add zero minutes.</value>
-	</data>
-	<data name="MainPage_Messages_DonateLater" xml:space="preserve">
-		<value>You can donate in settings&gt;about later.</value>
-	</data>
-	<data name="MainPage_Messages_DonatePlease" xml:space="preserve">
-		<value>This app is free to use. Submitting apps to the WP app store isn't. Would you consider a donation?</value>
-	</data>
-	<data name="MainPage_Report_AuxHours" xml:space="preserve">
-		<value>Other Hours: 	{0:0.0}
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddCallPage_Books" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="AddCallPage_Brochures" xml:space="preserve">
+    <value>Brochures</value>
+  </data>
+  <data name="AddCallPage_CallSaved" xml:space="preserve">
+    <value>Call Saved.</value>
+  </data>
+  <data name="AddCallPage_CallSavedFailed" xml:space="preserve">
+    <value>Call Saving Failed.</value>
+  </data>
+  <data name="AddCallPage_Date" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="AddCallPage_DeleteCall" xml:space="preserve">
+    <value>delete call</value>
+  </data>
+  <data name="AddCallPage_DeleteCallConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete this call?</value>
+  </data>
+  <data name="AddCallPage_DeleteCallFailed" xml:space="preserve">
+    <value>Deleting the call failed.</value>
+  </data>
+  <data name="AddCallPage_Headline" xml:space="preserve">
+    <value>call</value>
+  </data>
+  <data name="AddCallPage_Magazines" xml:space="preserve">
+    <value>Magazines</value>
+  </data>
+  <data name="AddCallPage_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="AddCallPage_Placements" xml:space="preserve">
+    <value>PLACEMENTS</value>
+  </data>
+  <data name="AddCallPage_Save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="AddCallPage_SaveBeforeEditMessage" xml:space="preserve">
+    <value>You must save the RV before adding a call.</value>
+  </data>
+  <data name="AddRBCTimePage_AskForDoubleEntry" xml:space="preserve">
+    <value>It appears you have already added time earlier today.  Would you like to merge this new time with the previous time for today?</value>
+  </data>
+  <data name="AddRBCTimePage_Confirmation" xml:space="preserve">
+    <value>Auxiliary Hour(s) Saved.</value>
+  </data>
+  <data name="AddRBCTimePage_ConvertMenuItem" xml:space="preserve">
+    <value>convert to time</value>
+  </data>
+  <data name="AddRBCTimePage_Date" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="AddRBCTimePage_Delete" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="AddRBCTimePage_DeleteConfirmation" xml:space="preserve">
+    <value>Auxiliary Time Deleted.</value>
+  </data>
+  <data name="AddRBCTimePage_DeleteFailed" xml:space="preserve">
+    <value>Deleting Failed.</value>
+  </data>
+  <data name="AddRBCTimePage_Headline" xml:space="preserve">
+    <value>auxiliary time</value>
+  </data>
+  <data name="AddRBCTimePage_Note" xml:space="preserve">
+    <value>Auxiliary time is any type of time that is not field service related, but that can be reported on your field service report - e.g. for some appointed brothers &amp; sisters time spent at regional building committee sites building kingdom halls can be noted on their report.  Please see your congregation service overseer for details.</value>
+  </data>
+  <data name="AddRBCTimePage_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="AddRBCTimePage_Save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="AddRBCTimePage_SaveConfirmation" xml:space="preserve">
+    <value>Time: {0} Hours Saved.</value>
+  </data>
+  <data name="AddRBCTimePage_SaveFailed" xml:space="preserve">
+    <value>Save Failed.</value>
+  </data>
+  <data name="AddRBCTimePage_Time" xml:space="preserve">
+    <value>TIME</value>
+  </data>
+  <data name="AddTimePage_Books" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="AddTimePage_Brochures" xml:space="preserve">
+    <value>Brochures</value>
+  </data>
+  <data name="AddTimePage_ConvertMenuItem" xml:space="preserve">
+    <value>convert to rbc time</value>
+  </data>
+  <data name="AddTimePage_Date" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="AddTimePage_DeleteMenuItem" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="AddTimePage_Headline" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="AddTimePage_Magazines" xml:space="preserve">
+    <value>Magazines</value>
+  </data>
+  <data name="AddTimePage_Messages_RBCConvertFailed" xml:space="preserve">
+    <value>Conversion Failed.</value>
+  </data>
+  <data name="AddTimePage_Messages_RBCConvertSuccess" xml:space="preserve">
+    <value>Time Converted to RBC.</value>
+  </data>
+  <data name="AddTimePage_Messages_SaveCompleted" xml:space="preserve">
+    <value>Time: {0} Hours Saved.</value>
+  </data>
+  <data name="AddTimePage_Messages_SaveFailed" xml:space="preserve">
+    <value>Failed to Save Time.</value>
+  </data>
+  <data name="AddTimePage_Messages_TimeDeleteFailed" xml:space="preserve">
+    <value>Delete Failed.</value>
+  </data>
+  <data name="AddTimePage_Messages_TimeDeleteSuccess" xml:space="preserve">
+    <value>Time Deleted.</value>
+  </data>
+  <data name="AddTimePage_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="AddTimePage_Placements" xml:space="preserve">
+    <value>PLACEMENTS</value>
+  </data>
+  <data name="AddTimePage_RVs" xml:space="preserve">
+    <value>Return Visits</value>
+  </data>
+  <data name="AddTimePage_Save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="AddTimePage_Time" xml:space="preserve">
+    <value>TIME</value>
+  </data>
+  <data name="AddTime_BibleStudies" xml:space="preserve">
+    <value>Bible Studies</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>FIELD SERVICE</value>
+  </data>
+  <data name="Application_DailyTextURL" xml:space="preserve">
+    <value>http://wol.jw.org/en/wol/dt/r1/lp-e/{0}/{1}/{2}</value>
+  </data>
+  <data name="BackupAndRestorePage_Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BackupAndRestorePage_Headline" xml:space="preserve">
+    <value>manage cloud</value>
+  </data>
+  <data name="BackupAndRestorePage_LastBackup" xml:space="preserve">
+    <value>Last Backup Date</value>
+  </data>
+  <data name="BackupAndRestorePage_Message" xml:space="preserve">
+    <value>Please sign-in and allow access to your SkyDrive.</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_DwnlProgress" xml:space="preserve">
+    <value>{0:0,0} of {1:0,0} downloaded.</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_NeverBackedUp" xml:space="preserve">
+    <value>Never Backed Up!</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_Progress" xml:space="preserve">
+    <value>{0:0,0} of {1:0,0} uploaded.</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_RestoreFailed" xml:space="preserve">
+    <value>Restore Failed!</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_RestoreSuccess" xml:space="preserve">
+    <value>Restore Completed!</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_Restoring" xml:space="preserve">
+    <value>Restoring Now...</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_SkyDriveListingFailed" xml:space="preserve">
+    <value>Skydrive Listing Failed.</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_UploadFailed" xml:space="preserve">
+    <value>Can't upload your backup data. Please log out and try again.</value>
+  </data>
+  <data name="BackupAndRestorePage_Messages_Welcome" xml:space="preserve">
+    <value>Welcome {0} {1}</value>
+  </data>
+  <data name="BackupAndRestorePage_NotSignedIn" xml:space="preserve">
+    <value>Not signed in.</value>
+  </data>
+  <data name="BackupAndRestorePage_Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="BackupAndRestorePage_SignIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="BackupAndRestorePage_Signout" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="BackupAndRestorePage_Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="CustomReportsPage_ErrorText" xml:space="preserve">
+    <value>You must choose a start &amp; end date.</value>
+  </data>
+  <data name="CustomReportsPage_Headline" xml:space="preserve">
+    <value>Custom Report</value>
+  </data>
+  <data name="CustomReportsPage_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="CustomReportsPage_Range" xml:space="preserve">
+    <value>RANGE</value>
+  </data>
+  <data name="CustomReportsPage_RunReport" xml:space="preserve">
+    <value>Run Report</value>
+  </data>
+  <data name="CustomReportsPage_Start" xml:space="preserve">
+    <value>START DATE</value>
+  </data>
+  <data name="CustomReportsPage_To" xml:space="preserve">
+    <value>END DATE</value>
+  </data>
+  <data name="CustomReportsPage_Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="CustomReportsPage_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="CustomReportsPage_LastMonth" xml:space="preserve">
+    <value>last month</value>
+  </data>
+  <data name="CustomReportsPage_LastServiceYear" xml:space="preserve">
+    <value>last service year</value>
+  </data>
+  <data name="FullRVListPage_Headline" xml:space="preserve">
+    <value>return visits</value>
+  </data>
+  <data name="FullRVListPage_YearOld" xml:space="preserve">
+    <value>Year Old</value>
+  </data>
+  <data name="MainPage_AppName" xml:space="preserve">
+    <value>JW Field Service</value>
+  </data>
+  <data name="MainPage_DT_Copyright" xml:space="preserve">
+    <value>THE ABOVE IS COPYRIGHT 2014 WATCHTOWER BIBLE AND TRACT SOCIETY OF PENNSYLVANIA, INC. ALL RIGHTS RESERVED.</value>
+  </data>
+  <data name="MainPage_DT_ErrorText" xml:space="preserve">
+    <value>You must be connected to the internet to view.</value>
+  </data>
+  <data name="MainPage_Presentations_Headline" xml:space="preserve">
+    <value>presentations</value>
+  </data>
+  <data name="MainPage_MainMenu_AddAuxTime" xml:space="preserve">
+    <value>add auxiliary time</value>
+  </data>
+  <data name="MainPage_MainMenu_AddRv" xml:space="preserve">
+    <value>add return visit</value>
+  </data>
+  <data name="MainPage_MainMenu_AddTime" xml:space="preserve">
+    <value>add time</value>
+  </data>
+  <data name="MainPage_MainMenu_BackupRestore" xml:space="preserve">
+    <value>backup &amp; restore</value>
+  </data>
+  <data name="MainPage_MainMenu_CustomReport" xml:space="preserve">
+    <value>custom time report</value>
+  </data>
+  <data name="MainPage_MainMenu_MonthReport" xml:space="preserve">
+    <value>{0} report</value>
+  </data>
+  <data name="MainPage_MainMenu_SendReport" xml:space="preserve">
+    <value>send service report</value>
+  </data>
+  <data name="MainPage_MainMenu_ServiceYearReport" xml:space="preserve">
+    <value>service year report</value>
+  </data>
+  <data name="MainPage_MainMenu_Settings" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="MainPage_MainMenu_WtLib" xml:space="preserve">
+    <value>watchtower library</value>
+  </data>
+  <data name="MainPage_Messages_AddedTime" xml:space="preserve">
+    <value>Time ({0} hrs &amp; {1} min) added.</value>
+  </data>
+  <data name="MainPage_Messages_CantAddZeroMin" xml:space="preserve">
+    <value>You can't add zero minutes.</value>
+  </data>
+  <data name="MainPage_Messages_DonateLater" xml:space="preserve">
+    <value>You can donate in settings&gt;about later.</value>
+  </data>
+  <data name="MainPage_Messages_DonatePlease" xml:space="preserve">
+    <value>This app is free to use. Submitting apps to the WP app store isn't. Would you consider a donation?</value>
+  </data>
+  <data name="MainPage_Report_AuxHours" xml:space="preserve">
+    <value>Other Hours: 	{0:0.0}
 </value>
-	</data>
-	<data name="MainPage_Report_BibleStudies" xml:space="preserve">
-		<value>Bible Studies:	{0}</value>
-	</data>
-	<data name="MainPage_Report_Books" xml:space="preserve">
-		<value>Books:		{0}
+  </data>
+  <data name="MainPage_Report_BibleStudies" xml:space="preserve">
+    <value>Bible Studies:	{0}</value>
+  </data>
+  <data name="MainPage_Report_Books" xml:space="preserve">
+    <value>Books:		{0}
 </value>
-	</data>
-	<data name="MainPage_Report_Brochures" xml:space="preserve">
-		<value>Brochures:	{0}
+  </data>
+  <data name="MainPage_Report_Brochures" xml:space="preserve">
+    <value>Brochures:	{0}
 </value>
-	</data>
-	<data name="MainPage_Report_Header" xml:space="preserve">
-		<value>Here is my field service report for {0:MMMM}, {0:yyyy}:
+  </data>
+  <data name="MainPage_Report_Header" xml:space="preserve">
+    <value>Here is my field service report for {0:MMMM}, {0:yyyy}:
 
 </value>
-	</data>
-	<data name="MainPage_Report_Hours" xml:space="preserve">
-		<value>Hours:		{0:0.00}
+  </data>
+  <data name="MainPage_Report_Hours" xml:space="preserve">
+    <value>Hours:		{0:0.00}
 </value>
-	</data>
-	<data name="MainPage_Report_Mags" xml:space="preserve">
-		<value>Magazines:	{0}
+  </data>
+  <data name="MainPage_Report_Mags" xml:space="preserve">
+    <value>Magazines:	{0}
 </value>
-	</data>
-	<data name="MainPage_Report_RVs" xml:space="preserve">
-		<value>Return Visits:	{0}
+  </data>
+  <data name="MainPage_Report_RVs" xml:space="preserve">
+    <value>Return Visits:	{0}
 </value>
-	</data>
-	<data name="MainPage_RvHeadline" xml:space="preserve">
-		<value>return visits</value>
-	</data>
-	<data name="MainPage_RV_DaysSince" xml:space="preserve">
-		<value>{0} Day(s) Since Last Visit</value>
-	</data>
-	<data name="MainPage_Time_BibleStudies" xml:space="preserve">
-		<value>Bible Studies</value>
-	</data>
-	<data name="MainPage_Time_Books" xml:space="preserve">
-		<value>Books</value>
-	</data>
-	<data name="MainPage_Time_Brochures" xml:space="preserve">
-		<value>Brochures</value>
-	</data>
-	<data name="MainPage_Time_Headline" xml:space="preserve">
-		<value>time</value>
-	</data>
-	<data name="MainPage_Time_Magazines" xml:space="preserve">
-		<value>Magazines</value>
-	</data>
-	<data name="MainPage_Time_Notes" xml:space="preserve">
-		<value>NOTES</value>
-	</data>
-	<data name="MainPage_Time_ReturnVisits" xml:space="preserve">
-		<value>Return Visits</value>
-	</data>
-	<data name="ReportingPage_BibleStudies_1" xml:space="preserve">
-		<value> Bible Studies</value>
-	</data>
-	<data name="ReportingPage_Entries" xml:space="preserve">
-		<value>entries</value>
-	</data>
-	<data name="ReportingPage_Entries_Header" xml:space="preserve">
-		<value>entries</value>
-	</data>
-	<data name="ReportingPage_Report_Books" xml:space="preserve">
-		<value> Books, </value>
-	</data>
-	<data name="ReportingPage_Report_Brochures" xml:space="preserve">
-		<value> Brochures, </value>
-	</data>
-	<data name="ReportingPage_Report_ChartTitle" xml:space="preserve">
-		<value>Time In Hours</value>
-	</data>
-	<data name="ReportingPage_Report_Days" xml:space="preserve">
-		<value> day(s)</value>
-	</data>
-	<data name="ReportingPage_Report_Disclaimer" xml:space="preserve">
-		<value>Reminder: Service Year Begins in September.</value>
-	</data>
-	<data name="ReportingPage_Report_From" xml:space="preserve">
-		<value>FROM: </value>
-	</data>
-	<data name="ReportingPage_Report_Headline" xml:space="preserve">
-		<value>report</value>
-	</data>
-	<data name="ReportingPage_Report_HoursOnDays" xml:space="preserve">
-		<value>{0} Hour(s) on {1} Days</value>
-	</data>
-	<data name="ReportingPage_Report_Legend" xml:space="preserve">
-		<value>legend</value>
-	</data>
-	<data name="ReportingPage_Report_Magazines" xml:space="preserve">
-		<value> Magazines, </value>
-	</data>
-	<data name="ReportingPage_Report_MyActivity" xml:space="preserve">
-		<value>my activity</value>
-	</data>
-	<data name="ReportingPage_Report_On" xml:space="preserve">
-		<value> on </value>
-	</data>
-	<data name="ReportingPage_Report_OtherActivity" xml:space="preserve">
-		<value>OTHER ACTIVITY</value>
-	</data>
-	<data name="ReportingPage_Report_Placements" xml:space="preserve">
-		<value>PLACEMENTS</value>
-	</data>
-	<data name="ReportingPage_Report_Time" xml:space="preserve">
-		<value>TIME</value>
-	</data>
-	<data name="ReportingPage_Report_TimeInHrs" xml:space="preserve">
-		<value>Time in Hours</value>
-	</data>
-	<data name="ReportingPage_Report_To" xml:space="preserve">
-		<value>TO: </value>
-	</data>
-	<data name="ReportingPage_Report_TotalHours" xml:space="preserve">
-		<value>TOTAL: </value>
-	</data>
-	<data name="ReportingPage_ReturnVisits_1" xml:space="preserve">
-		<value> Return Visits</value>
-	</data>
-	<data name="ReportingPage_Share" xml:space="preserve">
-		<value>share...</value>
-	</data>
-	<data name="RVPage_Address_Address1" xml:space="preserve">
-		<value>Address 1</value>
-	</data>
-	<data name="RVPage_Address_Address2" xml:space="preserve">
-		<value>Address 2</value>
-	</data>
-	<data name="RVPage_Address_City" xml:space="preserve">
-		<value>City</value>
-	</data>
-	<data name="RVPage_Address_Country" xml:space="preserve">
-		<value>Country</value>
-	</data>
-	<data name="RVPage_Address_CurrentAddress" xml:space="preserve">
-		<value>Current Address: </value>
-	</data>
-	<data name="RVPage_Address_Headline" xml:space="preserve">
-		<value>address</value>
-	</data>
-	<data name="RVPage_Address_LocationNotes" xml:space="preserve">
-		<value>Location Notes</value>
-	</data>
-	<data name="RVPage_Address_PostalCode" xml:space="preserve">
-		<value>Postal Code</value>
-	</data>
-<data name="RVPage_Address_StateDistrict" xml:space="preserve">
-		<value>State/Province/District</value>
-	</data>
-	<data name="RVPage_Address_Use" xml:space="preserve">
-		<value>Use</value>
-	</data>
-	<data name="RVPage_Headline" xml:space="preserve">
-		<value>ADD OR MODIFY RETURN VISIT</value>
-	</data>
-	<data name="RVPage_Info_Address" xml:space="preserve">
-		<value>ADDRESS</value>
-	</data>
-	<data name="RVPage_Info_Headline" xml:space="preserve">
-		<value>info</value>
-	</data>
-	<data name="RVPage_Info_PersonalInfo" xml:space="preserve">
-		<value>PERSONAL INFO</value>
-	</data>
-	<data name="RVPage_Menu_AddVisit" xml:space="preserve">
-		<value>add visit</value>
-	</data>
-	<data name="RVPage_Menu_Delete" xml:space="preserve">
-		<value>delete return visit</value>
-	</data>
-	<data name="RVPage_Menu_Email" xml:space="preserve">
-		<value>email return visit</value>
-	</data>
-	<data name="RVPage_Menu_Export" xml:space="preserve">
-		<value>export to contact record</value>
-	</data>
-	<data name="RVPage_Menu_Reset" xml:space="preserve">
-		<value>reset</value>
-	</data>
-	<data name="RVPage_Menu_Save" xml:space="preserve">
-		<value>save</value>
-	</data>
-	<data name="RVPage_Messages_Delete" xml:space="preserve">
-		<value>Are you sure you want to delete the return visit?</value>
-	</data>
-	<data name="RVPage_Messages_IncludeAllVisits" xml:space="preserve">
-		<value>Do you want to include all visits?</value>
-	</data>
-	<data name="RVPage_Messages_IncludeAllVisits2" xml:space="preserve">
-		<value>Include All Visits?</value>
-	</data>
-	<data name="RVPage_Messages_Saved" xml:space="preserve">
-		<value>Return Visit Saved.</value>
-	</data>
-	<data name="RVPage_Messages_SavedFailed" xml:space="preserve">
-		<value>Return Visit Saving Failed.</value>
-	</data>
-	<data name="RVPage_Messages_FillOutAddressBeforeSaving" xml:space="preserve">
-		<value>Please fill out the address before saving.</value>
-	</data>
-	<data name="RVPage_Messages_SaveBeforeAddingCall" xml:space="preserve">
-		<value>Please save before adding a call.</value>
-	</data>
-	<data name="RVPage_Personal_Age" xml:space="preserve">
-		<value>Age</value>
-	</data>
-	<data name="RVPage_Personal_Description" xml:space="preserve">
-		<value>Description</value>
-	</data>
-	<data name="RVPage_Personal_FullName" xml:space="preserve">
-		<value>Full Name</value>
-	</data>
-	<data name="RVPage_Personal_Headline" xml:space="preserve">
-		<value>personal</value>
-	</data>
-	<data name="RVPage_Personal_PhoneNumber" xml:space="preserve">
-		<value>Phone Number</value>
-	</data>
-	<data name="RVPage_Reminders_AddReminder" xml:space="preserve">
-		<value>Add Reminder</value>
-	</data>
-	<data name="RVPage_Reminders_Headline" xml:space="preserve">
-		<value>reminders</value>
-	</data>
-	<data name="RVPage_Reminders_Notes" xml:space="preserve">
-		<value>Notes</value>
-	</data>
-	<data name="RVPage_Reminders_SelectDate" xml:space="preserve">
-		<value>Select Date</value>
-	</data>
-	<data name="RVPage_Contact_Notes" xml:space="preserve">
-		<value>Age: {0}
+  </data>
+  <data name="MainPage_RvHeadline" xml:space="preserve">
+    <value>return visits</value>
+  </data>
+  <data name="MainPage_RV_DaysSince" xml:space="preserve">
+    <value>{0} Day(s) Since Last Visit</value>
+  </data>
+  <data name="MainPage_Time_BibleStudies" xml:space="preserve">
+    <value>Bible Studies</value>
+  </data>
+  <data name="MainPage_Time_Books" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="MainPage_Time_Brochures" xml:space="preserve">
+    <value>Brochures</value>
+  </data>
+  <data name="MainPage_Time_Headline" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="MainPage_Time_Magazines" xml:space="preserve">
+    <value>Magazines</value>
+  </data>
+  <data name="MainPage_Time_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="MainPage_Time_ReturnVisits" xml:space="preserve">
+    <value>Return Visits</value>
+  </data>
+  <data name="ReportingPage_BibleStudies_1" xml:space="preserve">
+    <value> Bible Studies</value>
+  </data>
+  <data name="ReportingPage_Entries" xml:space="preserve">
+    <value>entries</value>
+  </data>
+  <data name="ReportingPage_Entries_Header" xml:space="preserve">
+    <value>entries</value>
+  </data>
+  <data name="ReportingPage_Report_Books" xml:space="preserve">
+    <value> Books, </value>
+  </data>
+  <data name="ReportingPage_Report_Brochures" xml:space="preserve">
+    <value> Brochures, </value>
+  </data>
+  <data name="ReportingPage_Report_ChartTitle" xml:space="preserve">
+    <value>Time In Hours</value>
+  </data>
+  <data name="ReportingPage_Report_Days" xml:space="preserve">
+    <value> day(s)</value>
+  </data>
+  <data name="ReportingPage_Report_Disclaimer" xml:space="preserve">
+    <value>Reminder: Service Year Begins in September.</value>
+  </data>
+  <data name="ReportingPage_Report_From" xml:space="preserve">
+    <value>FROM: </value>
+  </data>
+  <data name="ReportingPage_Report_Headline" xml:space="preserve">
+    <value>report</value>
+  </data>
+  <data name="ReportingPage_Report_HoursOnDays" xml:space="preserve">
+    <value>{0} Hour(s) on {1} Days</value>
+  </data>
+  <data name="ReportingPage_Report_Legend" xml:space="preserve">
+    <value>legend</value>
+  </data>
+  <data name="ReportingPage_Report_Magazines" xml:space="preserve">
+    <value> Magazines, </value>
+  </data>
+  <data name="ReportingPage_Report_MyActivity" xml:space="preserve">
+    <value>my activity</value>
+  </data>
+  <data name="ReportingPage_Report_On" xml:space="preserve">
+    <value> on </value>
+  </data>
+  <data name="ReportingPage_Report_OtherActivity" xml:space="preserve">
+    <value>OTHER ACTIVITY</value>
+  </data>
+  <data name="ReportingPage_Report_Placements" xml:space="preserve">
+    <value>PLACEMENTS</value>
+  </data>
+  <data name="ReportingPage_Report_Time" xml:space="preserve">
+    <value>TIME</value>
+  </data>
+  <data name="ReportingPage_Report_TimeInHrs" xml:space="preserve">
+    <value>Time in Hours</value>
+  </data>
+  <data name="ReportingPage_Report_To" xml:space="preserve">
+    <value>TO: </value>
+  </data>
+  <data name="ReportingPage_Report_TotalHours" xml:space="preserve">
+    <value>TOTAL: </value>
+  </data>
+  <data name="ReportingPage_ReturnVisits_1" xml:space="preserve">
+    <value> Return Visits</value>
+  </data>
+  <data name="ReportingPage_Share" xml:space="preserve">
+    <value>share...</value>
+  </data>
+  <data name="RVPage_Address_Address1" xml:space="preserve">
+    <value>Address 1</value>
+  </data>
+  <data name="RVPage_Address_Address2" xml:space="preserve">
+    <value>Address 2</value>
+  </data>
+  <data name="RVPage_Address_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="RVPage_Address_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="RVPage_Address_CurrentAddress" xml:space="preserve">
+    <value>Current Address: </value>
+  </data>
+  <data name="RVPage_Address_Headline" xml:space="preserve">
+    <value>address</value>
+  </data>
+  <data name="RVPage_Address_LocationNotes" xml:space="preserve">
+    <value>Location Notes</value>
+  </data>
+  <data name="RVPage_Address_PostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="RVPage_Address_StateDistrict" xml:space="preserve">
+    <value>State/Province/District</value>
+  </data>
+  <data name="RVPage_Address_Use" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="RVPage_Headline" xml:space="preserve">
+    <value>ADD OR MODIFY RETURN VISIT</value>
+  </data>
+  <data name="RVPage_Info_Address" xml:space="preserve">
+    <value>ADDRESS</value>
+  </data>
+  <data name="RVPage_Info_Headline" xml:space="preserve">
+    <value>info</value>
+  </data>
+  <data name="RVPage_Info_PersonalInfo" xml:space="preserve">
+    <value>PERSONAL INFO</value>
+  </data>
+  <data name="RVPage_Menu_AddVisit" xml:space="preserve">
+    <value>add visit</value>
+  </data>
+  <data name="RVPage_Menu_Delete" xml:space="preserve">
+    <value>delete return visit</value>
+  </data>
+  <data name="RVPage_Menu_Email" xml:space="preserve">
+    <value>email return visit</value>
+  </data>
+  <data name="RVPage_Menu_Export" xml:space="preserve">
+    <value>export to contact record</value>
+  </data>
+  <data name="RVPage_Menu_Reset" xml:space="preserve">
+    <value>reset</value>
+  </data>
+  <data name="RVPage_Menu_Save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="RVPage_Messages_Delete" xml:space="preserve">
+    <value>Are you sure you want to delete the return visit?</value>
+  </data>
+  <data name="RVPage_Messages_IncludeAllVisits" xml:space="preserve">
+    <value>Do you want to include all visits?</value>
+  </data>
+  <data name="RVPage_Messages_IncludeAllVisits2" xml:space="preserve">
+    <value>Include All Visits?</value>
+  </data>
+  <data name="RVPage_Messages_Saved" xml:space="preserve">
+    <value>Return Visit Saved.</value>
+  </data>
+  <data name="RVPage_Messages_SavedFailed" xml:space="preserve">
+    <value>Return Visit Saving Failed.</value>
+  </data>
+  <data name="RVPage_Messages_FillOutAddressBeforeSaving" xml:space="preserve">
+    <value>Please fill out the address before saving.</value>
+  </data>
+  <data name="RVPage_Messages_SaveBeforeAddingCall" xml:space="preserve">
+    <value>Please save before adding a call.</value>
+  </data>
+  <data name="RVPage_Personal_Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="RVPage_Personal_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RVPage_Personal_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="RVPage_Personal_Headline" xml:space="preserve">
+    <value>personal</value>
+  </data>
+  <data name="RVPage_Personal_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="RVPage_Reminders_AddReminder" xml:space="preserve">
+    <value>Add Reminder</value>
+  </data>
+  <data name="RVPage_Reminders_Headline" xml:space="preserve">
+    <value>reminders</value>
+  </data>
+  <data name="RVPage_Reminders_Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="RVPage_Reminders_SelectDate" xml:space="preserve">
+    <value>Select Date</value>
+  </data>
+  <data name="RVPage_Contact_Notes" xml:space="preserve">
+    <value>Age: {0}
 Gender: {1}
 Physical Description: {2}
 Other Notes: {3}</value>
-	</data>
-	<data name="RVPage_Reminders_SelectTime" xml:space="preserve">
-		<value>Select Time</value>
-	</data>
-	<data name="RVPage_Reminders_Messages_ReminderPastNow" xml:space="preserve">
-		<value>Reminder must be past right now.</value>
-	</data>
-	<data name="RVPage_Reminders_ReminderAdded" xml:space="preserve">
-		<value>Reminder Added.</value>
-	</data>
-	<data name="RVPage_Reminders_ReminderTitle" xml:space="preserve">
-		<value>Field Service Reminder ({0})</value>
-	</data>
-	<data name="RVPage_Visits_DaysSinceDays" xml:space="preserve">
-		<value>day(s) since visit</value>
-	</data>
-	<data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
-		<value>weeks since visit</value>
-	</data>
-	<data name="RVPage_Visits_DaysSinceMonths" xml:space="preserve">
-		<value>months since visit</value>
-	</data>
-	<data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
-		<value>year(s) since visit</value>
-	</data>
-	<data name="RVPage_Visits_Headline" xml:space="preserve">
-		<value>visits</value>
-	</data>
-	<data name="RVPage_Share_Body" xml:space="preserve">
-		<value>Name: {0}
+  </data>
+  <data name="RVPage_Reminders_SelectTime" xml:space="preserve">
+    <value>Select Time</value>
+  </data>
+  <data name="RVPage_Reminders_Messages_ReminderPastNow" xml:space="preserve">
+    <value>Reminder must be past right now.</value>
+  </data>
+  <data name="RVPage_Reminders_ReminderAdded" xml:space="preserve">
+    <value>Reminder Added.</value>
+  </data>
+  <data name="RVPage_Reminders_ReminderTitle" xml:space="preserve">
+    <value>Field Service Reminder ({0})</value>
+  </data>
+  <data name="RVPage_Visits_DaysSinceDays" xml:space="preserve">
+    <value>day(s) since visit</value>
+  </data>
+  <data name="RVPage_Visits_DaysSinceWeeks" xml:space="preserve">
+    <value>weeks since visit</value>
+  </data>
+  <data name="RVPage_Visits_DaysSinceMonths" xml:space="preserve">
+    <value>months since visit</value>
+  </data>
+  <data name="RVPage_Visits_DaysSinceYears" xml:space="preserve">
+    <value>year(s) since visit</value>
+  </data>
+  <data name="RVPage_Visits_Headline" xml:space="preserve">
+    <value>visits</value>
+  </data>
+  <data name="RVPage_Share_Body" xml:space="preserve">
+    <value>Name: {0}
 Phone Number: {1}
 Address 1: {2}
 Address 2: {3}
@@ -693,175 +693,175 @@ Age: {9}
 Gender: {10}
 Physical Description: {11}
 </value>
-	</data>
-	<data name="SettingsPage_About_AppVersion" xml:space="preserve">
-		<value>Application Version: </value>
-	</data>
-	<data name="SettingsPage_About_Copyright" xml:space="preserve">
-		<value>Copyright 2013 Square.HipToBe</value>
-	</data>
-	<data name="SettingsPage_About_CoreVersion" xml:space="preserve">
-		<value>Core Version: </value>
-	</data>
-	<data name="SettingsPage_About_Donate" xml:space="preserve">
-		<value>donate to development</value>
-	</data>
-	<data name="SettingsPage_About_Headline" xml:space="preserve">
-		<value>about</value>
-	</data>
-	<data name="SettingsPage_About_Help" xml:space="preserve">
-		<value>ask a question</value>
-	</data>
-	<data name="SettingsPage_About_Links" xml:space="preserve">
-		<value>LINKS</value>
-	</data>
-	<data name="SettingsPage_About_OpenSource" xml:space="preserve">
-		<value>OPEN SOURCE</value>
-	</data>
-	<data name="SettingsPage_About_Rate" xml:space="preserve">
-		<value>rate this app</value>
-	</data>
-	<data name="SettingsPage_About_ReportIssue" xml:space="preserve">
-		<value>report bug</value>
-	</data>
-	<data name="SettingsPage_About_ThisAppFOSS" xml:space="preserve">
-		<value>This app is open source!</value>
-	</data>
-	<data name="SettingsPage_About_Version" xml:space="preserve">
-		<value>Version</value>
-	</data>
-	<data name="SettingsPage_Settings_AddCallPlacements" xml:space="preserve">
-		<value>Automatically count RVs</value>
-	</data>
-	<data name="SettingsPage_Settings_AppSettings" xml:space="preserve">
-		<value>APPLICATION SETTINGS</value>
-	</data>
-	<data name="SettingsPage_Settings_BeautifyPhoneNumbers" xml:space="preserve">
-		<value>Beautify Phone Numbers (US Only)</value>
-	</data>
-	<data name="SettingsPage_Settings_CSO" xml:space="preserve">
-		<value>Congregation Secretary or Service Group Overseer</value>
-	</data>
-	<data name="SettingsPage_Settings_CSO_Message1" xml:space="preserve">
-		<value>Tap the button above to choose the contact record of your CSO.</value>
-	</data>
-	<data name="SettingsPage_Settings_DefaultAge" xml:space="preserve">
-		<value>Default Age</value>
-	</data>
-	<data name="SettingsPage_Settings_DeleteCallsAndRv" xml:space="preserve">
-		<value>Delete Calls and RV</value>
-	</data>
-	<data name="SettingsPage_Settings_DeleteCallsRvNote" xml:space="preserve">
-		<value>NOTE: Deleting the calls will delete the RVs from your service report.</value>
-	</data>
-	<data name="SettingsPage_Settings_Email" xml:space="preserve">
-		<value>Email</value>
-	</data>
-	<data name="SettingsPage_Settings_Headline" xml:space="preserve">
-		<value>settings</value>
-	</data>
-	<data name="SettingsPage_Settings_NickName" xml:space="preserve">
-		<value>Nick Name</value>
-	</data>
-	<data name="SettingsPage_Settings_PersonalSettings" xml:space="preserve">
-		<value>PERSONAL SETTINGS</value>
-	</data>
-	<data name="SettingsPage_Settings_PlacementsMessage1" xml:space="preserve">
-		<value>If you don't intend to store your return visits in this app set this to 'off' and you can manually record your return visits on the add time page. If set to 'on' placements recorded on a return visit call will count towards your monthly report. If you set this to 'off' you will have to enter your placements twice (on the call and on the add time screen).</value>
-	</data>
-	<data name="SettingsPage_Settings_PrivacyPolicy" xml:space="preserve">
-		<value>Privacy Policy: This app uses location services to find your address when entering a new return visit. While the address you enter is stored, the GPS location data recorded while searching for an address is never stored or transmitted.</value>
-	</data>
-	<data name="SettingsPage_Settings_RoundTime" xml:space="preserve">
-		<value>Round Time (Minute Increments)</value>
-	</data>
-	<data name="SettingsPage_Settings_SendMethod" xml:space="preserve">
-		<value>Default Send Method</value>
-	</data>
-	<data name="SettingsPage_Settings_SharingOptions" xml:space="preserve">
-		<value>SHARING OPTIONS</value>
-	</data>
-	<data name="SettingsPage_Settings_SignatureMessage" xml:space="preserve">
-		<value>Include Field Service Signature</value>
-	</data>
-	<data name="SettingsPage_Settings_SignatureMessage2" xml:space="preserve">
-		<value>Signature is only included on emailed reports. It’s left off of SMS reports.</value>
-	</data>
-	<data name="SettingsPage_Settings_SMS" xml:space="preserve">
-		<value>SMS</value>
-	</data>
-	<data name="SettingsPage_Settings_UseLocServices" xml:space="preserve">
-		<value>Use Location Services</value>
-	</data>
-	<data name="TimeReport_AuxHoursAndMinutes" xml:space="preserve">
-		<value>{0} Hour(s) and {1} Minute(s) Auxiliary Time</value>
-	</data>
-	<data name="TimeReport_HoursAndMinutes" xml:space="preserve">
-		<value>{0} Hour(s) &amp; {1} Minutes</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Books" xml:space="preserve">
-		<value> Books</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Brochures" xml:space="preserve">
-		<value> Brochures</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Magazines" xml:space="preserve">
-		<value> Magazines</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Menu_Edit" xml:space="preserve">
-		<value>edit</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Notes" xml:space="preserve">
-		<value>NOTES</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Placements" xml:space="preserve">
-		<value>PLACEMENTS</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Rv" xml:space="preserve">
-		<value>RETURN VISIT</value>
-	</data>
-	<data name="AddTimePage_Tracts" xml:space="preserve">
-		<value>Tracts</value>
-	</data>
-	<data name="MainPage_Report_Tracts" xml:space="preserve">
-		<value>Tracts:	{0}
+  </data>
+  <data name="SettingsPage_About_AppVersion" xml:space="preserve">
+    <value>Application Version: </value>
+  </data>
+  <data name="SettingsPage_About_Copyright" xml:space="preserve">
+    <value>Copyright 2013 Square.HipToBe</value>
+  </data>
+  <data name="SettingsPage_About_CoreVersion" xml:space="preserve">
+    <value>Core Version: </value>
+  </data>
+  <data name="SettingsPage_About_Donate" xml:space="preserve">
+    <value>donate to development</value>
+  </data>
+  <data name="SettingsPage_About_Headline" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="SettingsPage_About_Help" xml:space="preserve">
+    <value>ask a question</value>
+  </data>
+  <data name="SettingsPage_About_Links" xml:space="preserve">
+    <value>LINKS</value>
+  </data>
+  <data name="SettingsPage_About_OpenSource" xml:space="preserve">
+    <value>OPEN SOURCE</value>
+  </data>
+  <data name="SettingsPage_About_Rate" xml:space="preserve">
+    <value>rate this app</value>
+  </data>
+  <data name="SettingsPage_About_ReportIssue" xml:space="preserve">
+    <value>report bug</value>
+  </data>
+  <data name="SettingsPage_About_ThisAppFOSS" xml:space="preserve">
+    <value>This app is open source!</value>
+  </data>
+  <data name="SettingsPage_About_Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="SettingsPage_Settings_AddCallPlacements" xml:space="preserve">
+    <value>Automatically count RVs</value>
+  </data>
+  <data name="SettingsPage_Settings_AppSettings" xml:space="preserve">
+    <value>APPLICATION SETTINGS</value>
+  </data>
+  <data name="SettingsPage_Settings_BeautifyPhoneNumbers" xml:space="preserve">
+    <value>Beautify Phone Numbers (US Only)</value>
+  </data>
+  <data name="SettingsPage_Settings_CSO" xml:space="preserve">
+    <value>Congregation Secretary or Service Group Overseer</value>
+  </data>
+  <data name="SettingsPage_Settings_CSO_Message1" xml:space="preserve">
+    <value>Tap the button above to choose the contact record of your CSO.</value>
+  </data>
+  <data name="SettingsPage_Settings_DefaultAge" xml:space="preserve">
+    <value>Default Age</value>
+  </data>
+  <data name="SettingsPage_Settings_DeleteCallsAndRv" xml:space="preserve">
+    <value>Delete Calls and RV</value>
+  </data>
+  <data name="SettingsPage_Settings_DeleteCallsRvNote" xml:space="preserve">
+    <value>NOTE: Deleting the calls will delete the RVs from your service report.</value>
+  </data>
+  <data name="SettingsPage_Settings_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SettingsPage_Settings_Headline" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="SettingsPage_Settings_NickName" xml:space="preserve">
+    <value>Nick Name</value>
+  </data>
+  <data name="SettingsPage_Settings_PersonalSettings" xml:space="preserve">
+    <value>PERSONAL SETTINGS</value>
+  </data>
+  <data name="SettingsPage_Settings_PlacementsMessage1" xml:space="preserve">
+    <value>If you don't intend to store your return visits in this app set this to 'off' and you can manually record your return visits on the add time page. If set to 'on' placements recorded on a return visit call will count towards your monthly report. If you set this to 'off' you will have to enter your placements twice (on the call and on the add time screen).</value>
+  </data>
+  <data name="SettingsPage_Settings_PrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy: This app uses location services to find your address when entering a new return visit. While the address you enter is stored, the GPS location data recorded while searching for an address is never stored or transmitted.</value>
+  </data>
+  <data name="SettingsPage_Settings_RoundTime" xml:space="preserve">
+    <value>Round Time (Minute Increments)</value>
+  </data>
+  <data name="SettingsPage_Settings_SendMethod" xml:space="preserve">
+    <value>Default Send Method</value>
+  </data>
+  <data name="SettingsPage_Settings_SharingOptions" xml:space="preserve">
+    <value>SHARING OPTIONS</value>
+  </data>
+  <data name="SettingsPage_Settings_SignatureMessage" xml:space="preserve">
+    <value>Include Field Service Signature</value>
+  </data>
+  <data name="SettingsPage_Settings_SignatureMessage2" xml:space="preserve">
+    <value>Signature is only included on emailed reports. It’s left off of SMS reports.</value>
+  </data>
+  <data name="SettingsPage_Settings_SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="SettingsPage_Settings_UseLocServices" xml:space="preserve">
+    <value>Use Location Services</value>
+  </data>
+  <data name="TimeReport_AuxHoursAndMinutes" xml:space="preserve">
+    <value>{0} Hour(s) and {1} Minute(s) Auxiliary Time</value>
+  </data>
+  <data name="TimeReport_HoursAndMinutes" xml:space="preserve">
+    <value>{0} Hour(s) &amp; {1} Minutes</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Books" xml:space="preserve">
+    <value> Books</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Brochures" xml:space="preserve">
+    <value> Brochures</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Magazines" xml:space="preserve">
+    <value> Magazines</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Menu_Edit" xml:space="preserve">
+    <value>edit</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Placements" xml:space="preserve">
+    <value>PLACEMENTS</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Rv" xml:space="preserve">
+    <value>RETURN VISIT</value>
+  </data>
+  <data name="AddTimePage_Tracts" xml:space="preserve">
+    <value>Tracts</value>
+  </data>
+  <data name="MainPage_Report_Tracts" xml:space="preserve">
+    <value>Tracts:	{0}
 </value>
-	</data>
-	<data name="MainPage_Time_Tracts" xml:space="preserve">
-		<value>Tracts</value>
-	</data>
-	<data name="ReportingPage_Chart_Header" xml:space="preserve">
-		<value>chart</value>
-	</data>
-	<data name="ReportingPage_Chart_YourTime" xml:space="preserve">
-		<value>YOUR TIME</value>
-	</data>
-	<data name="ReportingPage_Report_Tracts" xml:space="preserve">
-		<value> Tracts</value>
-	</data>
-	<data name="AddCallPage_Tracts" xml:space="preserve">
-		<value>Tracts</value>
-	</data>
-	<data name="HowTo_Header" xml:space="preserve">
-		<value>new version!</value>
-	</data>
-	<data name="HowTo_WhatsNext_I1" xml:space="preserve">
-		<value>1.  House-to-House Record Tracking.
+  </data>
+  <data name="MainPage_Time_Tracts" xml:space="preserve">
+    <value>Tracts</value>
+  </data>
+  <data name="ReportingPage_Chart_Header" xml:space="preserve">
+    <value>chart</value>
+  </data>
+  <data name="ReportingPage_Chart_YourTime" xml:space="preserve">
+    <value>YOUR TIME</value>
+  </data>
+  <data name="ReportingPage_Report_Tracts" xml:space="preserve">
+    <value> Tracts, </value>
+  </data>
+  <data name="AddCallPage_Tracts" xml:space="preserve">
+    <value>Tracts</value>
+  </data>
+  <data name="HowTo_Header" xml:space="preserve">
+    <value>new version!</value>
+  </data>
+  <data name="HowTo_WhatsNext_I1" xml:space="preserve">
+    <value>1.  House-to-House Record Tracking.
 2.  Record "not at home" visit for a return visit.</value>
-	</data>
-	<data name="HowTo_WhatsNext_T1" xml:space="preserve">
-		<value>Whats Next?</value>
-	</data>
-	<data name="Reporting_ReportHeader" xml:space="preserve">
-		<value>Field service report for {0}:
+  </data>
+  <data name="HowTo_WhatsNext_T1" xml:space="preserve">
+    <value>Whats Next?</value>
+  </data>
+  <data name="Reporting_ReportHeader" xml:space="preserve">
+    <value>Field service report for {0}:
 
 </value>
-	</data>
-	<data name="SettingsPage_FAQ_Headline" xml:space="preserve">
-		<value>faq</value>
-	</data>
-	<data name="SettingsPage_FAQ_HowToEnterRVs_A" xml:space="preserve">
-		<value>There are two ways to enter RVs so they will show up on your report:
+  </data>
+  <data name="SettingsPage_FAQ_Headline" xml:space="preserve">
+    <value>faq</value>
+  </data>
+  <data name="SettingsPage_FAQ_HowToEnterRVs_A" xml:space="preserve">
+    <value>There are two ways to enter RVs so they will show up on your report:
 1.       Using the built-in RV database.
 	a.       Save a new RV or enter an existing RV.
 	b.      Per the OD book, you don’t count the initial visit as an RV, so the first visit will not show up on your report, but all subsequent visits will be automatically counted on your report.
@@ -869,172 +869,204 @@ Physical Description: {11}
 	a.       This method will only work if you don’t want to use the first method. You can’t use both at the same time.
 	b.      To turn on manually counting of RVs go to: “Settings &gt; Automatically count RVs” and turn it off.
 	c.       Now you will be able to count RVs manually on your add time page.</value>
-	</data>
-	<data name="SettingsPage_FAQ_HowToEnterRVs_Q" xml:space="preserve">
-		<value>How do I enter the number of return vists on my report?</value>
-	</data>
-	<data name="SettingsPage_FAQ_WhyDontRVShow_A" xml:space="preserve">
-		<value>Per the OD book, the initial call is not counted on your time report.  Return visits are only counted on a subsequent visit which occurrs after the first initial visit.  If you are importing your return visits and have already made the initial call then you must save a 'dummy' initial visit to ensure that your return visit is counted on your report.  If you are not using the return visit features of this app, then you should go to " 'settings' &gt; 'Automatically count RVs' " and set it to 'off' and you will be able to manually track your RVs.</value>
-	</data>
-	<data name="SettingsPage_FAQ_WhyDontRVShow_Q" xml:space="preserve">
-		<value>Why don't my return visits show on my report?</value>
-	</data>
-	<data name="ViewPreviousVisitPage_Tracts" xml:space="preserve">
-		<value> Tracts</value>
-	</data>
-	<data name="MainPage_MainMenu_HouseToHouseRecords" xml:space="preserve">
-		<value>house to house</value>
-	</data>
-	<data name="StreetBuildingList_HouseCountFormatString" xml:space="preserve">
-		<value>{0} Not at Homes</value>
-	</data>
-	<data name="StreetBuildingList_PageName" xml:space="preserve">
-		<value>street/building list</value>
-	</data>
-	<data name="TerritoryCard_PageName" xml:space="preserve">
-		<value>territory card</value>
-	</data>
-	<data name="TerritoryList_Appbar_Add" xml:space="preserve">
-		<value>add</value>
-	</data>
-	<data name="TerritoryList_PageName" xml:space="preserve">
-		<value>territory list</value>
-	</data>
-	<data name="TerritoryList_StreetCountFormatString" xml:space="preserve">
-		<value>{0} streets.</value>
-	</data>
-	<data name="TerritoryList_TerritoryNumberFormatString" xml:space="preserve">
-		<value>Territory # {0}</value>
-	</data>
-	<data name="TimeCalc_BreakTime" xml:space="preserve">
-		<value>BREAK TIME</value>
-	</data>
-	<data name="TimeCalc_CANCEL" xml:space="preserve">
-		<value>cancel</value>
-	</data>
-	<data name="TimeCalc_EndTime" xml:space="preserve">
-		<value>END TIME</value>
-	</data>
-	<data name="TimeCalc_OK" xml:space="preserve">
-		<value>ok</value>
-	</data>
-	<data name="TimeCalc_StartTime" xml:space="preserve">
-		<value>START TIME</value>
-	</data>
-	<data name="General_HoursAndMinutes" xml:space="preserve">
-		<value>h' hours and 'm' minutes'</value>
-	</data>
-	<data name="General_SelectTime" xml:space="preserve">
-		<value>Select time</value>
-	</data>
-	<data name="HowTo_WhatsNew" xml:space="preserve">
-		<value>What's New?</value>
-	</data>
-	<data name="FullRVListPage_NoVisitsSaved" xml:space="preserve">
-		<value>No Previous Visits!</value>
-	</data>
-	<data name="AddTimePage_MustBeMinimum" xml:space="preserve">
-		<value>Minimum time: {0} minutes</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextSettings" xml:space="preserve">
-		<value>DAILY TEXT SETTINGS</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextURL" xml:space="preserve">
-		<value>URL</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextInstructions" xml:space="preserve">
-		<value>Go to http://wol.jw.org and go to the daily text page. Copy the URL of that page into the above box.</value>
-	</data>
-	<data name="Application_CustomDailyTextURL" xml:space="preserve">
-		<value>http://wol.jw.org/{0}/wol/dt/{1}/{2}/{3}/{4}/{5}</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextUseCustom" xml:space="preserve">
-		<value>Use Custom Daily Text URL</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextErrorUrl" xml:space="preserve">
-		<value>Could not parse URL, try again.</value>
-	</data>
-	<data name="SettingsPage_Settings_DailyTextErrorUrlNotSet" xml:space="preserve">
-		<value>Please enter url first.</value>
-	</data>
-	<data name="SettingsPage_Settings_TimeGoalNote" xml:space="preserve">
-		<value>Enter your monthly goal (in hours)</value>
-	</data>
-	<data name="SettingsPage_Settings_TimeGoal" xml:space="preserve">
-		<value>GOAL</value>
-	</data>
-	<data name="ReportingPage_Report_GoalText1" xml:space="preserve">
-		<value>GOAL: </value>
-	</data>
-	<data name="ReportingPage_Report_GoalText2" xml:space="preserve">
-		<value>{0} HOUR(S) IN {1} MONTH(S)</value>
-	</data>
-	<data name="ReportingPage_Report_RemainingText1" xml:space="preserve">
-		<value>TIME REMAINING: </value>
-	</data>
-	<data name="ReportingPage_Report_RemainingText2" xml:space="preserve">
-		<value>{0} HOUR(S) &amp; {1} MINUTE(S)</value>
-	</data>
-	<data name="TelerikRadDatePicker_EmptyDateContent" xml:space="preserve">
-		<value>Select date</value>
-	</data>
-	<data name="TelerikRadDatePicker_DatePickerPopupHeader" xml:space="preserve">
-		<value>SELECT DATE</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimePickerPopupHeader" xml:space="preserve">
-		<value>SELECT TIME</value>
-	</data>
-	<data name="TelerikRadDatePicker_EmptyTimeContent" xml:space="preserve">
-		<value>Select time</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanPickerPopupHeader" xml:space="preserve">
-		<value>SELECT TIME PERIOD</value>
-	</data>
-	<data name="TelerikRadDatePicker_EmptyTimeSpanContent" xml:space="preserve">
-		<value>Select time period</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanSecond" xml:space="preserve">
-		<value>seconds</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanMinute" xml:space="preserve">
-		<value>minutes</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanHour" xml:space="preserve">
-		<value>hours</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanDay" xml:space="preserve">
-		<value>days</value>
-	</data>
-	<data name="TelerikRadDatePicker_TimeSpanWeek" xml:space="preserve">
-		<value>weeks</value>
-	</data>
-	<data name="TelerikRadDatePicker_LeapYear" xml:space="preserve">
-		<value>Leap Year</value>
-	</data>
-	<data name="TelerikRadDatePicker_CancelButttonText" xml:space="preserve">
-		<value>Cancel</value>
-	</data>
-	<data name="TelerikRadDatePicker_OkButtonText" xml:space="preserve">
-		<value>Done</value>
-	</data>
-	<data name="Sharing_Signature" xml:space="preserve">
-		<value>"
+  </data>
+  <data name="SettingsPage_FAQ_HowToEnterRVs_Q" xml:space="preserve">
+    <value>How do I enter the number of return vists on my report?</value>
+  </data>
+  <data name="SettingsPage_FAQ_WhyDontRVShow_A" xml:space="preserve">
+    <value>Per the OD book, the initial call is not counted on your time report.  Return visits are only counted on a subsequent visit which occurrs after the first initial visit.  If you are importing your return visits and have already made the initial call then you must save a 'dummy' initial visit to ensure that your return visit is counted on your report.  If you are not using the return visit features of this app, then you should go to " 'settings' &gt; 'Automatically count RVs' " and set it to 'off' and you will be able to manually track your RVs.</value>
+  </data>
+  <data name="SettingsPage_FAQ_WhyDontRVShow_Q" xml:space="preserve">
+    <value>Why don't my return visits show on my report?</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Tracts" xml:space="preserve">
+    <value> Tracts</value>
+  </data>
+  <data name="MainPage_MainMenu_HouseToHouseRecords" xml:space="preserve">
+    <value>house to house</value>
+  </data>
+  <data name="StreetBuildingList_HouseCountFormatString" xml:space="preserve">
+    <value>{0} Not at Homes</value>
+  </data>
+  <data name="StreetBuildingList_PageName" xml:space="preserve">
+    <value>street/building list</value>
+  </data>
+  <data name="TerritoryCard_PageName" xml:space="preserve">
+    <value>territory card</value>
+  </data>
+  <data name="TerritoryList_Appbar_Add" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="TerritoryList_PageName" xml:space="preserve">
+    <value>territory list</value>
+  </data>
+  <data name="TerritoryList_StreetCountFormatString" xml:space="preserve">
+    <value>{0} streets.</value>
+  </data>
+  <data name="TerritoryList_TerritoryNumberFormatString" xml:space="preserve">
+    <value>Territory # {0}</value>
+  </data>
+  <data name="TimeCalc_BreakTime" xml:space="preserve">
+    <value>BREAK TIME</value>
+  </data>
+  <data name="TimeCalc_CANCEL" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="TimeCalc_EndTime" xml:space="preserve">
+    <value>END TIME</value>
+  </data>
+  <data name="TimeCalc_OK" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="TimeCalc_StartTime" xml:space="preserve">
+    <value>START TIME</value>
+  </data>
+  <data name="General_HoursAndMinutes" xml:space="preserve">
+    <value>h' hours and 'm' minutes'</value>
+  </data>
+  <data name="General_SelectTime" xml:space="preserve">
+    <value>Select time</value>
+  </data>
+  <data name="HowTo_WhatsNew" xml:space="preserve">
+    <value>What's New?</value>
+  </data>
+  <data name="FullRVListPage_NoVisitsSaved" xml:space="preserve">
+    <value>No Previous Visits!</value>
+  </data>
+  <data name="AddTimePage_MustBeMinimum" xml:space="preserve">
+    <value>Minimum time: {0} minutes</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextSettings" xml:space="preserve">
+    <value>DAILY TEXT SETTINGS</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextURL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextInstructions" xml:space="preserve">
+    <value>Go to http://wol.jw.org and go to the daily text page. Copy the URL of that page into the above box.</value>
+  </data>
+  <data name="Application_CustomDailyTextURL" xml:space="preserve">
+    <value>http://wol.jw.org/{0}/wol/dt/{1}/{2}/{3}/{4}/{5}</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextUseCustom" xml:space="preserve">
+    <value>Use Custom Daily Text URL</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextErrorUrl" xml:space="preserve">
+    <value>Could not parse URL, try again.</value>
+  </data>
+  <data name="SettingsPage_Settings_DailyTextErrorUrlNotSet" xml:space="preserve">
+    <value>Please enter url first.</value>
+  </data>
+  <data name="SettingsPage_Settings_TimeGoalNote" xml:space="preserve">
+    <value>Enter your monthly goal (in hours)</value>
+  </data>
+  <data name="SettingsPage_Settings_TimeGoal" xml:space="preserve">
+    <value>GOAL</value>
+  </data>
+  <data name="ReportingPage_Report_GoalText1" xml:space="preserve">
+    <value>GOAL: </value>
+  </data>
+  <data name="ReportingPage_Report_GoalText2" xml:space="preserve">
+    <value>{0} HOUR(S) IN {1} MONTH(S)</value>
+  </data>
+  <data name="ReportingPage_Report_RemainingText1" xml:space="preserve">
+    <value>TIME REMAINING: </value>
+  </data>
+  <data name="ReportingPage_Report_RemainingText2" xml:space="preserve">
+    <value>{0} HOUR(S) &amp; {1} MINUTE(S)</value>
+  </data>
+  <data name="TelerikRadDatePicker_EmptyDateContent" xml:space="preserve">
+    <value>Select date</value>
+  </data>
+  <data name="TelerikRadDatePicker_DatePickerPopupHeader" xml:space="preserve">
+    <value>SELECT DATE</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimePickerPopupHeader" xml:space="preserve">
+    <value>SELECT TIME</value>
+  </data>
+  <data name="TelerikRadDatePicker_EmptyTimeContent" xml:space="preserve">
+    <value>Select time</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanPickerPopupHeader" xml:space="preserve">
+    <value>SELECT TIME PERIOD</value>
+  </data>
+  <data name="TelerikRadDatePicker_EmptyTimeSpanContent" xml:space="preserve">
+    <value>Select time period</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanSecond" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanMinute" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanHour" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanDay" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="TelerikRadDatePicker_TimeSpanWeek" xml:space="preserve">
+    <value>weeks</value>
+  </data>
+  <data name="TelerikRadDatePicker_LeapYear" xml:space="preserve">
+    <value>Leap Year</value>
+  </data>
+  <data name="TelerikRadDatePicker_CancelButttonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TelerikRadDatePicker_OkButtonText" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Sharing_Signature" xml:space="preserve">
+    <value>
 		
 		
 P.S. - This report was generated by the "Field Service" App on my Windows Phone! If you would like to try this app you can download it from the Store!</value>
-	</data>
-	<data name="Sharing_Thanks" xml:space="preserve">
-		<value>
+  </data>
+  <data name="Sharing_Thanks" xml:space="preserve">
+    <value>
 			
 Thanks</value>
-	</data>
-	<data name="Sharing_Subject" xml:space="preserve">
-		<value>Field Service Report</value>
-	</data>
-	<data name="WhatsNew_Presentations1" xml:space="preserve">
-		<value>To comply with the new jw.org terms of service we can no longer pull the daily text from jw.org</value>
-	</data>
-	<data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
-		<value>Would you like to include details regarding your auxiliary hours in your report?</value>
-	</data>
+  </data>
+  <data name="Sharing_Subject" xml:space="preserve">
+    <value>Field Service Report</value>
+  </data>
+  <data name="WhatsNew_Presentations1" xml:space="preserve">
+    <value>To comply with the new jw.org terms of service we can no longer pull the daily text from jw.org</value>
+  </data>
+  <data name="Reporting_IncludeAuxiliaryDetail" xml:space="preserve">
+    <value>Would you like to include details regarding your auxiliary hours in your report?</value>
+  </data>
+  <data name="AddTimePage_Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="MainPage_Report_Placements" xml:space="preserve">
+    <value>Placements:	{0}
+</value>
+  </data>
+  <data name="MainPage_Report_Videos" xml:space="preserve">
+    <value>Videos:		{0}
+</value>
+  </data>
+  <data name="MainPage_Time_Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="ReportingPage_Report_Placements_Detail" xml:space="preserve">
+    <value> Placements</value>
+  </data>
+  <data name="ReportingPage_Report_Videos" xml:space="preserve">
+    <value> Videos</value>
+  </data>
+  <data name="AddCallPage_Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="ViewPreviousVisitPage_Videos" xml:space="preserve">
+    <value> Videos</value>
+  </data>
+  <data name="RVPage_Visits_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="RVPage_Visits_Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
 </root>

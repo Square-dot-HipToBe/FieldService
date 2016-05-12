@@ -269,6 +269,7 @@ namespace FieldService.View
                 Brochures = (int)tbBrochures.Value,
                 Books = (int)tbBooks.Value,
                 Tracts = (int)tbTracts.Value,
+                Videos = (int)tbVideos.Value,
                 BibleStudies = (int)tbBibleStudies.Value,
                 ReturnVisits = (int)tbReturnVisits.Value,
                 Notes = tbNotes.Text
@@ -285,6 +286,7 @@ namespace FieldService.View
                     tdOld.Brochures += td.Brochures;
                     tdOld.Books += td.Books;
                     tdOld.Tracts += td.Tracts;
+                        tdOld.Videos += td.Videos;
                     tdOld.BibleStudies += td.BibleStudies;
                     tdOld.ReturnVisits += td.ReturnVisits;
                     tdOld.Notes += td.Notes.Length > 0 ? string.Format("\n\n{0}", td.Notes) : string.Empty;
@@ -425,6 +427,7 @@ namespace FieldService.View
                 tbBibleStudies.Value = 0;
                 tbReturnVisits.Value = 0;
                 tbTracts.Value = 0;
+                tbVideos.Value = 0;
                 tbNotes.Text = string.Empty;
                 _timerState = TimerState.Stopped;
                 ClearRestartTime();
@@ -545,29 +548,23 @@ namespace FieldService.View
             TimeData[] entries = Reporting.BuildTimeReport(from, tod, SortOrder.DateOldestToNewest);
 
             int tTime = 0;
-            int tMags = 0;
-            int tBks = 0;
-            int tBros = 0;
-            int tRv = 0;
+            int tPlacements = 0;
             int tBs = 0;
-            int tTs = 0;
+            int tRv = 0;
+            int tVids = 0;
             foreach (TimeData e in entries) {
                 tTime += e.Minutes;
-                tMags += e.Magazines;
-                tBks += e.Books;
-                tBros += e.Brochures;
                 tRv += e.ReturnVisits;
                 tBs += e.BibleStudies;
-                tTs += e.Tracts;
+                tPlacements += e.Placements;
+                tVids += e.Videos;
             }
 
             body += string.Format(StringResources.MainPage_Report_Hours, ((double)tTime / 60.0));
             var x = RBCTimeDataInterface.GetMonthRBCTimeTotal(from);
             body += x > 0 ? string.Format(StringResources.MainPage_Report_AuxHours, ((double)x / 60.0)) : string.Empty;
-            body += tMags > 0 ? string.Format(StringResources.MainPage_Report_Mags, tMags) : string.Empty;
-            body += tBks > 0 ? string.Format(StringResources.MainPage_Report_Books, tBks) : string.Empty;
-            body += tBros > 0 ? string.Format(StringResources.MainPage_Report_Brochures, tBros) : string.Empty;
-            body += tTs > 0 ? string.Format(StringResources.MainPage_Report_Tracts, tTs) : string.Empty;
+            body += tPlacements > 0 ? string.Format(StringResources.MainPage_Report_Placements, tPlacements): string.Empty;
+            body += tVids > 0 ? string.Format(StringResources.MainPage_Report_Videos, tVids): string.Empty;
             body += tRv > 0 ? string.Format(StringResources.MainPage_Report_RVs, tRv) : string.Empty;
             body += tBs > 0 ? string.Format(StringResources.MainPage_Report_BibleStudies, tBs) : string.Empty;
             if (

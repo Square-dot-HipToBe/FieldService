@@ -421,7 +421,9 @@ namespace FieldService
                 {
                         string body = string.Empty;
                         body += string.Format("\n\n{0}:\n",StringResources.RVPage_Visits_Headline);
-                        return App.ViewModel.ReturnVisitData.PreviousVisits.Where(pp => pp != null).Select(pp => RvPreviousVisitsDataInterface.GetCall(pp.PreviousVisitItemId)).Where(pv => pv != null).Aggregate(body, (current, pv) => current + string.Format("Date: {0}\n" + "Placements: {1} Mg's, {2} Bk's, {3} Br's\n" + "Notes: {4}\n\n\n", pv.Date.ToShortDateString(), pv.Magazines, pv.Books, pv.Brochures, pv.Notes));
+                        return App.ViewModel.ReturnVisitData.PreviousVisits.Where(pp => pp != null).Select(pp => RvPreviousVisitsDataInterface.GetCall(pp.PreviousVisitItemId)).Where(pv => pv != null).Aggregate(body, (current, pv) => current + ($"Date: {pv.Date.ToShortDateString()}\n" +
+                                                                                                                                                                                                                                                    $"Placements: {pv.Magazines} Mg's, {pv.Books} Bk's, {pv.Brochures} Br's, {pv.Tracts} Tr's, {pv.Videos} Vid's\n" +
+                                                                                                                                                                                                                                                    $"Notes: {pv.Notes}\n\n\n"));
                 }
 
                 private void miCreateContact_Click(object sender, EventArgs e)

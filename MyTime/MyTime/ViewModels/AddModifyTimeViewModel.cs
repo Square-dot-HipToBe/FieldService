@@ -21,7 +21,8 @@ namespace FieldService.ViewModels
 					                                              Minutes = 0,
 					                                              Notes = string.Empty,
 					                                              ReturnVisits = 0,
-                                                                                      Tracts = 0
+                                                                                      Tracts = 0,
+                                                                                      Videos = 0
 				                                              });
 			}
 			set
@@ -101,6 +102,18 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataBooks");
             }
+	    }
+
+	    public int TimeDataVideos
+	    {
+	        get { return TimeData.Videos; }
+	        set
+	        {
+	            if (TimeData.Videos == value) return;
+	            TimeData.Videos = value;
+                OnPropertyChanged("TimeData");
+                OnPropertyChanged("TimeDataVideos");
+	        }
 	    }
 
 	    public int TimeDataTracts
@@ -199,6 +212,7 @@ namespace FieldService.ViewModels
 			TimeData.Notes = string.IsNullOrWhiteSpace(timeOld.Notes) ? null : string.Format("{0}\n\n{1}",TimeData.Notes,timeOld.Notes);
 			TimeData.ReturnVisits += timeOld.ReturnVisits;
 		        TimeData.Tracts += timeOld.Tracts;
+		    TimeData.Videos += timeOld.Videos;
 
 			OnPropertyChanged("TimeData");
 

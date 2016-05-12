@@ -13,7 +13,6 @@
 // ***********************************************************************
 
 using System;
-using HtmlAgilityPack;
 
 namespace FieldService.SocietyScraper
 {
@@ -35,7 +34,7 @@ namespace FieldService.SocietyScraper
         /// <summary>
         /// The _HW
         /// </summary>
-        private HtmlWeb _hw;
+        //private HtmlWeb _hw;
 
         #region Events
 
@@ -44,28 +43,28 @@ namespace FieldService.SocietyScraper
         /// </summary>
         /// <param name="o">The o.</param>
         /// <param name="e">The e.</param>
-        protected void hw_LoadCompleted(object o, HtmlDocumentLoadCompleted e)
-        {
-            HtmlDocument doc = e.Document;
-            if (doc == null) return;
-            HtmlNode docNode = doc.DocumentNode;
+        //protected void hw_LoadCompleted(object o, HtmlDocumentLoadCompleted e)
+        //{
+        //    HtmlDocument doc = e.Document;
+        //    if (doc == null) return;
+        //    HtmlNode docNode = doc.DocumentNode;
 
-            HtmlNodeCollection tags = docNode.SelectNodes(".//p[@class='sa']");
-            string scripture = tags.Count > 0 ? tags[0].InnerText : string.Empty;
+        //    HtmlNodeCollection tags = docNode.SelectNodes(".//p[@class='sa']");
+        //    string scripture = tags.Count > 0 ? tags[0].InnerText : string.Empty;
 
-            tags = docNode.SelectNodes(".//p[@class='sb']");
-            string summaryText = tags.Count > 0 ? tags[0].InnerText : string.Empty;
+        //    tags = docNode.SelectNodes(".//p[@class='sb']");
+        //    string summaryText = tags.Count > 0 ? tags[0].InnerText : string.Empty;
 
-            scripture = scripture.Replace("&nbsp;", " ");
-            summaryText = summaryText.Replace("&nbsp;", " ");
+        //    scripture = scripture.Replace("&nbsp;", " ");
+        //    summaryText = summaryText.Replace("&nbsp;", " ");
 
-            var dt = new DailyText {
-                                       Scripture = scripture,
-                                       SummaryText = summaryText
-                                   };
+        //    var dt = new DailyText {
+        //                               Scripture = scripture,
+        //                               SummaryText = summaryText
+        //                           };
 
-            DailyTextRetrieved.Invoke(dt);
-        }
+        //    DailyTextRetrieved.Invoke(dt);
+        //}
 
         #endregion
 
@@ -80,11 +79,11 @@ namespace FieldService.SocietyScraper
         /// <param name="d">The d.</param>
         public void StartDailyTextRetrieval(DateTime d)
         {
-            string url = App.Settings.UseCustomDTUrl ? App.Settings.CustomDTUrl : string.Format(StringResources.Application_DailyTextURL, DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
-            if (string.IsNullOrEmpty(url)) return;
-            _hw = new HtmlWeb();
-            _hw.LoadCompleted += hw_LoadCompleted;
-            _hw.LoadAsync(url);
+            //string url = App.Settings.UseCustomDTUrl ? App.Settings.CustomDTUrl : string.Format(StringResources.Application_DailyTextURL, DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
+            //if (string.IsNullOrEmpty(url)) return;
+            //_hw = new HtmlWeb();
+            //_hw.LoadCompleted += hw_LoadCompleted;
+            //_hw.LoadAsync(url);
         }
     }
 

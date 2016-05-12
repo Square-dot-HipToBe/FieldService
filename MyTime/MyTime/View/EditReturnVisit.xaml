@@ -183,10 +183,14 @@
                                         </telerikPrimitives:RadContextMenu.ContextMenu>
                                         <TextBlock Foreground="{StaticResource AppForegroundBrush}" Text="{Binding Date, StringFormat=\{0:D\}}" Style="{StaticResource PhoneTextLargeStyle}"/>
                                         <TextBlock Foreground="{StaticResource AppForegroundBrush}" Text="{Binding Date, Converter={StaticResource DateTimeToShortTimeValueConverter}, StringFormat=@ \{0\}}" Style="{StaticResource PhoneTextSmallStyle}" Margin="12,0"/>
-                                        <TextBlock Text="{Binding Notes}" Height="50" TextWrapping="Wrap" TextTrimming="WordEllipsis" Style="{StaticResource PhoneTextSmallStyle}" />
+                                        <TextBlock Text="{Binding Notes}" 
+                                                   Height="50" 
+                                                   TextWrapping="Wrap" 
+                                                   TextTrimming="WordEllipsis" 
+                                                   Visibility="{Binding Notes, Converter={StaticResource StringLengthToVisibilityConverter}}"
+                                                   Style="{StaticResource PhoneTextSmallStyle}" />
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding DaysSinceVisit}" Style="{StaticResource PhoneTextAccentStyle}" />
-                                            <TextBlock Text="{Binding Path=StringResources.RVPage_Visits_DaysSinceDays, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextAccentStyle}" />
+                                            <TextBlock Text="{Binding DaysSinceVisitString}" Style="{StaticResource PhoneTextAccentStyle}" />
                                         </StackPanel>
                                     </StackPanel>
                                 </DataTemplate>
