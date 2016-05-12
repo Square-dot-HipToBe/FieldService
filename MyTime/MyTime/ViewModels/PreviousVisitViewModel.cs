@@ -139,7 +139,66 @@ namespace FieldService.ViewModels
             }
         }
 
-        public int DaysSinceVisit { get { return DateTime.Today.Subtract(_previousVisitData.Date).Days; } }
+        public int DaysSinceVisit => _previousVisitData.Date.DayOfYear == DateTime.Today.DayOfYear &&
+                                     _previousVisitData.Date.Year == DateTime.Today.Year
+            ? 0 
+            : DateTime.Today.Subtract(_previousVisitData.Date).Days+1;
+
+        public string DaysSinceVisitString => BuildDaysSinceString(DaysSinceVisit);
+
+
+        private int GetMonthsBetween(DateTime from, DateTime to)
+        {
+            if (from > to) return GetMonthsBetween(to, from);
+
+            var monthDiff = Math.Abs((to.Year * 12 + (to.Month - 1)) - (from.Year * 12 + (from.Month - 1)));
+
+            if (from.AddMonths(monthDiff) > to || to.Day < from.Day)
+            {
+                return monthDiff - 1;
+            }
+            else {
+                return monthDiff;
+            }
+        }
+
+        private string BuildDaysSinceString(int _daysSinceLastVisit)
+        {
+            if (_daysSinceLastVisit == (DateTime.Now - SqlCeConstants.DateTimeMinValue).Days)
+                return StringResources.FullRVListPage_NoVisitsSaved;
+
+            if (_daysSinceLastVisit == 0)
+            {
+                return StringResources.RVPage_Visits_Today;
+            }
+
+            if (_daysSinceLastVisit == 1)
+            {
+                return StringResources.RVPage_Visits_Yesterday;
+            }
+
+            if (_daysSinceLastVisit < 14)
+            {
+                //less than 2 weeks
+                return string.Format("{0} {1}", _daysSinceLastVisit, StringResources.RVPage_Visits_DaysSinceDays);
+            }
+            else if (_daysSinceLastVisit / 7 < 8)
+            {               //less than 2 months
+                return string.Format("{0} {1}", _daysSinceLastVisit / 7, StringResources.RVPage_Visits_DaysSinceWeeks);
+            }
+            else if (_daysSinceLastVisit < 365)
+            {                                                                 //less than a year
+                var d = DateTime.Now.AddDays(-1 * _daysSinceLastVisit);
+                return string.Format("{0} {1}", GetMonthsBetween(DateTime.Now, d),
+                    StringResources.RVPage_Visits_DaysSinceMonths);
+            }
+            else {
+                //greater than a year
+                return string.Format("{0} {1}", Math.Floor(((double)_daysSinceLastVisit) / 365.0),
+                    StringResources.RVPage_Visits_DaysSinceYears);
+            }
+            return null;
+        }
 
         public int PreviousVisitItemId
         {
