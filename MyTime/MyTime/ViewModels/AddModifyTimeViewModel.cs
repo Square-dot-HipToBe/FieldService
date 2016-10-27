@@ -4,84 +4,105 @@ using MyTimeDatabaseLib;
 
 namespace FieldService.ViewModels
 {
-	public class AddModifyTimeViewModel : INotifyPropertyChanged
-	{
-		private TimeData _timeData;
+    public class AddModifyTimeViewModel : INotifyPropertyChanged
+    {
+        private TimeData _timeData;
 
-		public TimeData TimeData
-		{
-			get
-			{
-				return _timeData ?? (_timeData = new TimeData {
-					                                              BibleStudies = 0,
-					                                              Books = 0,
-					                                              Brochures = 0,
-					                                              Date = DateTime.Today,
-					                                              Magazines = 0,
-					                                              Minutes = 0,
-					                                              Notes = string.Empty,
-					                                              ReturnVisits = 0,
-                                                                                      Tracts = 0,
-                                                                                      Videos = 0
-				                                              });
-			}
-			set
-			{
-				if (_timeData == value) return;
-				_timeData = value;
-				OnPropertyChanged("TimeData");
-			}
-		}
-
-	    public DateTime TimeDataDate
-	    {
-	        get { return TimeData.Date; }
-	        set
-	        {
-	            if (TimeData.Date.Equals(value)) return;
-	            TimeData.Date = value;
+        public TimeData TimeData
+        {
+            get
+            {
+                return _timeData ?? (_timeData = new TimeData
+                {
+                    BibleStudies = 0,
+                    Books = 0,
+                    Brochures = 0,
+                    Date = DateTime.Today,
+                    Magazines = 0,
+                    Minutes = 0,
+                    Notes = string.Empty,
+                    ReturnVisits = 0,
+                    Tracts = 0,
+                    Videos = 0
+                });
+            }
+            set
+            {
+                if (_timeData == value) return;
+                _timeData = value;
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataDate");
-	        }
-	    }
+                OnPropertyChanged("TimeDataTotalTime");
+                OnPropertyChanged("TimeDataMagazines");
+                OnPropertyChanged("TimeDataBibleStudies");
+                OnPropertyChanged("TimeDataBooks");
+                OnPropertyChanged("TimeDataBrochures");
+                OnPropertyChanged("TimeDataTracts");
+                OnPropertyChanged("TimeDataVideos");
+                OnPropertyChanged("TimeDataNotes");
+                OnPropertyChanged("TimeDataReturnVisits");
+            }
+        }
 
-	    public TimeSpan TimeDataTotalTime
-	    {
-	        get { return TimeData.TotalTime; }
-	        set
-	        {
-	            if (TimeData.TotalTime == value) return;
-	            TimeData.TotalTime = value;
+        public DateTime TimeDataDate
+        {
+            get { return TimeData.Date; }
+            set
+            {
+                if (TimeData.Date.Equals(value)) return;
+                TimeData.Date = value;
+                OnPropertyChanged("TimeData");
+                OnPropertyChanged("TimeDataDate");
+            }
+        }
+
+        public TimeSpan TimeDataTotalTime
+        {
+            get { return TimeData.TotalTime; }
+            set
+            {
+                if (TimeData.TotalTime == value) return;
+                TimeData.TotalTime = value;
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataTotalTime");
-	        }
-	    }
+            }
+        }
 
-		public int TimeDataItemId
-		{
-			get { return _timeData == null ? -1 : _timeData.ItemId; }
-			set
-			{
-				if (value < 0) return;
-				_timeData = TimeDataInterface.GetTimeDataItem(value);
-				OnPropertyChanged("TimeData");
-			}
-		}
+        public int TimeDataItemId
+        {
+            get { return _timeData == null ? -1 : _timeData.ItemId; }
+            set
+            {
+                if (value < 0) return;
+                _timeData = TimeDataInterface.GetTimeDataItem(value);
+                OnPropertyChanged("TimeData");
+                OnPropertyChanged("TimeDataDate");
+                OnPropertyChanged("TimeDataTotalTime");
+                OnPropertyChanged("TimeDataMagazines");
+                OnPropertyChanged("TimeDataBibleStudies");
+                OnPropertyChanged("TimeDataBooks");
+                OnPropertyChanged("TimeDataBrochures");
+                OnPropertyChanged("TimeDataTracts");
+                OnPropertyChanged("TimeDataVideos");
+                OnPropertyChanged("TimeDataNotes");
+                OnPropertyChanged("TimeDataReturnVisits");
+            }
+        }
 
-	    public int TimeDataMagazines
-	    {
-	        get { return TimeData.Magazines; }
-	        set
-	        {
-	            if (TimeData.Magazines == value) return;
-	            TimeData.Magazines = value;
+        public int TimeDataMagazines
+        {
+            get { return TimeData.Magazines; }
+            set
+            {
+                if (TimeData.Magazines == value) return;
+                TimeData.Magazines = value;
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataMagazines");
-	        }
-	    }
+            }
+        }
 
-	    public int TimeDataBrochures
-	    {
+        public int TimeDataBrochures
+        {
             get { return TimeData.Brochures; }
             set
             {
@@ -90,10 +111,10 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataBrochures");
             }
-	    }
+        }
 
-	    public int TimeDataBooks
-	    {
+        public int TimeDataBooks
+        {
             get { return TimeData.Books; }
             set
             {
@@ -102,22 +123,22 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataBooks");
             }
-	    }
+        }
 
-	    public int TimeDataVideos
-	    {
-	        get { return TimeData.Videos; }
-	        set
-	        {
-	            if (TimeData.Videos == value) return;
-	            TimeData.Videos = value;
+        public int TimeDataVideos
+        {
+            get { return TimeData.Videos; }
+            set
+            {
+                if (TimeData.Videos == value) return;
+                TimeData.Videos = value;
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataVideos");
-	        }
-	    }
+            }
+        }
 
-	    public int TimeDataTracts
-	    {
+        public int TimeDataTracts
+        {
             get { return TimeData.Tracts; }
             set
             {
@@ -126,10 +147,10 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataTracts");
             }
-	    }
+        }
 
-	    public int TimeDataReturnVisits
-	    {
+        public int TimeDataReturnVisits
+        {
             get { return TimeData.ReturnVisits; }
             set
             {
@@ -138,10 +159,10 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataReturnVisits");
             }
-	    }
+        }
 
-	    public int TimeDataBibleStudies
-	    {
+        public int TimeDataBibleStudies
+        {
             get { return TimeData.BibleStudies; }
             set
             {
@@ -150,9 +171,9 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataBibleStudies");
             }
-	    }
+        }
 
-	    public string TimeDataNotes
+        public string TimeDataNotes
         {
             get { return TimeData.Notes; }
             set
@@ -162,69 +183,91 @@ namespace FieldService.ViewModels
                 OnPropertyChanged("TimeData");
                 OnPropertyChanged("TimeDataNotes");
             }
-	    }
+        }
 
-	    #region INotifyPropertyChanged Members
+        #region INotifyPropertyChanged Members
 
-		public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
-		#endregion
+        #endregion
 
-		protected virtual void OnPropertyChanged(string propertyName)
-		{
-			PropertyChangedEventHandler handler = PropertyChanged;
-			if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-		}
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+        }
 
-		public bool AddOrUpdateTime() { return TimeDataInterface.AddOrUpdateTime(ref _timeData); }
+        public bool AddOrUpdateTime() { return TimeDataInterface.AddOrUpdateTime(ref _timeData); }
 
-		public bool ConvertToRBCTime()
-		{
-			var rtd = new RBCTimeData {
-				                          Minutes = TimeData.Minutes,
-				                          Date = TimeData.Date,
-				                          Notes = TimeData.Notes
-			                          };
-			return DeleteTime() && RBCTimeDataInterface.AddOrUpdateTime(ref rtd);
-		}
+        public bool ConvertToRBCTime()
+        {
+            var rtd = new RBCTimeData
+            {
+                Minutes = TimeData.Minutes,
+                Date = TimeData.Date,
+                Notes = TimeData.Notes
+            };
+            return DeleteTime() && RBCTimeDataInterface.AddOrUpdateTime(ref rtd);
+        }
 
-		public bool DeleteTime()
-		{
-			bool v = _timeData.ItemId >= 0 && TimeDataInterface.DeleteTime(_timeData.ItemId);
-			if (v) {
-				_timeData = null;
-				OnPropertyChanged("TimeData");
-			}
-			return v;
-		}
+        public bool DeleteTime()
+        {
+            bool v = _timeData.ItemId >= 0 && TimeDataInterface.DeleteTime(_timeData.ItemId);
+            if (v)
+            {
+                _timeData = null;
+                OnPropertyChanged("TimeDataDate");
+                OnPropertyChanged("TimeDataTotalTime");
+                OnPropertyChanged("TimeDataMagazines");
+                OnPropertyChanged("TimeDataBibleStudies");
+                OnPropertyChanged("TimeDataBooks");
+                OnPropertyChanged("TimeDataBrochures");
+                OnPropertyChanged("TimeDataTracts");
+                OnPropertyChanged("TimeDataVideos");
+                OnPropertyChanged("TimeDataNotes");
+                OnPropertyChanged("TimeDataReturnVisits");
+            }
+            return v;
+        }
 
-		public bool AddOrUpdateTime(int idExisting)
-		{
-			//throw new NotImplementedException();
-			var timeOld = _timeData;
-			TimeDataItemId = idExisting;
-			TimeData.BibleStudies += timeOld.BibleStudies;
-			TimeData.Books += timeOld.Books;
-			TimeData.Brochures += timeOld.Brochures;
-			TimeData.Date = timeOld.Date;
-			TimeData.Magazines += timeOld.Magazines;
-			TimeData.Minutes += timeOld.Minutes;
-			TimeData.Notes = string.IsNullOrWhiteSpace(timeOld.Notes) ? null : string.Format("{0}\n\n{1}",TimeData.Notes,timeOld.Notes);
-			TimeData.ReturnVisits += timeOld.ReturnVisits;
-		        TimeData.Tracts += timeOld.Tracts;
-		    TimeData.Videos += timeOld.Videos;
+        public bool AddOrUpdateTime(int idExisting)
+        {
+            //throw new NotImplementedException();
+            var timeNewData = _timeData;
+            TimeDataItemId = idExisting;
+            TimeData.BibleStudies += timeNewData.BibleStudies;
+            TimeData.Books += timeNewData.Books;
+            TimeData.Brochures += timeNewData.Brochures;
+            TimeData.Date = timeNewData.Date;
+            TimeData.Magazines += timeNewData.Magazines;
+            TimeData.Minutes += timeNewData.Minutes;
+            TimeData.Notes = string.IsNullOrWhiteSpace(timeNewData.Notes) ? TimeData.Notes : string.Format("{0}\n\n{1}", TimeData.Notes, timeNewData.Notes);
+            TimeData.ReturnVisits += timeNewData.ReturnVisits;
+            TimeData.Tracts += timeNewData.Tracts;
+            TimeData.Videos += timeNewData.Videos;
 
 			OnPropertyChanged("TimeData");
+            OnPropertyChanged("TimeDataDate");
+            OnPropertyChanged("TimeDataTotalTime");
+            OnPropertyChanged("TimeDataMagazines");
+            OnPropertyChanged("TimeDataBibleStudies");
+            OnPropertyChanged("TimeDataBooks");
+            OnPropertyChanged("TimeDataBrochures");
+            OnPropertyChanged("TimeDataTracts");
+            OnPropertyChanged("TimeDataVideos");
+            OnPropertyChanged("TimeDataNotes");
+            OnPropertyChanged("TimeDataReturnVisits");
 
-			return AddOrUpdateTime();
 
-		}
+            return AddOrUpdateTime();
 
-		public bool IsDoubleDataEntry(out int id)
-		{
-			//throw new NotImplementedException();
-			id = -1;
-			return _timeData.ItemId <= 0 && TimeDataInterface.IsDoubleDataEntry(_timeData.Date, out id);
-		}
-	}
+        }
+
+        public bool IsDoubleDataEntry(out int id)
+        {
+            //throw new NotImplementedException();
+            id = -1;
+            return _timeData.ItemId <= 0 && TimeDataInterface.IsDoubleDataEntry(_timeData.Date, out id);
+        }
+    }
 }
